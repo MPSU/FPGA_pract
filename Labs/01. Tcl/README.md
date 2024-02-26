@@ -16,9 +16,9 @@
 
 ## Подготовка к выполнению лабораторной работы
 * Создайте в Vivado проект "demoproject" (для вашего удобства создавайте его в отдельной папке, отметив галочку "Create project subdirectory")
-* Добавьте в этот проект RTL файлы "demo.v" и "demo_wrapper_nexys_a7.v"
-* Добавьте в проект файл тестбенча "tb_demo.v"
-* Добавьте в проект xdc-файл "Nexys-A7-100T-Master.xdc"
+* Добавьте в этот проект RTL файлы [demo.v](./demoproject/rtl/demo.sv) и [demo_wrapper_nexys_a7.v](./demoproject/rtl/demo_wrapper_nexys_a7.sv)
+* Добавьте в проект файл тестбенча [tb_demo.v](./demoproject/tb/tb_demo.sv)
+* Добавьте в проект xdc-файл [Nexys-A7-100T-Master.xdc](./demoproject/xdc/Nexys-A7-100T-Master.xdc)
 
 Если вы не помните как создавать проекты, то обратитесь к
 [материалам АПС с прошлого семестра](https://github.com/MPSU/APS/tree/master/Vivado%20Basics).
