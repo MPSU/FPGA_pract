@@ -1,7 +1,7 @@
 # Лабораторная работа 1. Язык Tcl.
 
 ## Что такое Tcl
-![../../pic/Labs/01_tcl/tcl.png](.pic/tcl.png)
+![../../pic/Labs/01_tcl/tcl.png](pic/tcl.png)
 
  * Tcl (от англ. Tool Command Language — «командный язык инструментов») — скриптовый язык высокого уровня
 
@@ -29,7 +29,7 @@
 
 В меню «File» выберите пункт «Write Project Tcl»
 
-![alt text](.pic/tcl2.png)
+![alt text](pic/tcl2.png)
 
 > В современных версиях Vivado для экспорта Tcl файла используйте пункт меню «File > Project > Write Tcl»
 
@@ -37,16 +37,16 @@
 
 > В современных версиях Vivado это меню немного отличается. Если у вас свежая версия, то убедитесь, что в этом окне все галочки не отмечены. TODO: переделать картинку.
 
-![alt text](.pic/tcl3.png)
+![alt text](pic/tcl3.png)
 
 
 Пусть это будет файл «build_project.tcl» в директории «demoproject»
 
-![alt text](.pic/tcl4.png)
+![alt text](pic/tcl4.png)
 
 После нажатия на «OK» будет создан tcl скрипт
 
-![alt text](.pic/tcl5.png)
+![alt text](pic/tcl5.png)
 
 Давайте теперь проверим созданный скрипт. Смело удаляем созданный вами проект (но файлы исходников не трогаем!).
 
@@ -91,7 +91,7 @@ vivado -mode batch -nojournal -nolog -source build_project.tcl
 
 Рассмотрим этот процесс на примере Vivado:
 
-![alt text](.pic/tcl6.png)
+![alt text](pic/tcl6.png)
 
  * В нижней части окна Vivado есть вкладка "Tcl Console"
  * Эта вкладка интересна нам по нескольким причинам:
