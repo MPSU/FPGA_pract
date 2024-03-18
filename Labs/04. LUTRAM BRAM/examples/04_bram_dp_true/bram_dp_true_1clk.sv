@@ -9,7 +9,6 @@ module bram_dp_true_1clk
   input  logic [RAM_ADDR_BITS-1:0] addr_b_i,
   input  logic [RAM_WIDTH-1:0]     data_a_i,
   input  logic [RAM_WIDTH-1:0]     data_b_i,
-
   input  logic                     we_a_i,
   input  logic                     we_b_i,
   input  logic                     en_a_i,

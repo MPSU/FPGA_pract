@@ -57,12 +57,12 @@ endmodule
 ```
 
 Вспомним, что означает каждый порт памяти:
- * clk_i - сигнал тактовой частоты
- * wdata_i - данные для записи
- * waddr_i - адрес для записи
- * we_i - разрешение на запись
- * raddr_i - адрес чтения
- * rdata_o - результат чтения из памяти
+ * `clk_i` - сигнал тактовой частоты
+ * `wdata_i` - данные для записи
+ * `waddr_i` - адрес для записи
+ * `we_i` - разрешение на запись
+ * `raddr_i` - адрес чтения
+ * `rdata_o` - результат чтения из памяти
 
 Параметр памяти `RAM_WIDTH` определяет ширину шин данных в битах, а параметр `RAM_ADDR_BITS` определяет ширину шин адреса и глубину памяти. Например, `RAM_ADDR_BITS = 10` приведёт к появлению памяти глубиной в 1024 ячейки.
 
@@ -81,7 +81,7 @@ endmodule
 
 Напомним, что отличительной особенностью BRAM является синхронное чтение из памяти. Давайте рассмотрим целый ряд примеров таких памятей в разных конфигурациях (на самом деле это всё разные режимы работы одного аппаратного блока BRAM в FPGA).
 
-### BRAM - single port
+### BRAM - Однопортовая память
 
 Самая простая память - это память с одним портом. Через один порт в один момент времени мы можем либо писать, либо читать данные. Одновременно можно производить только одну операцию.
 
@@ -288,15 +288,261 @@ endmodule
 
 Здесь используется конструкция `generate`, которая перебирает все байты, и для каждого i-го байта проверяет бит `we_i[i]`. Если этот бит равен 1, то в соответствующий байт происходит запись.
 
-### BRAM - simple dual port
+### BRAM - Простая двухпортовая память (Simple Dual Port)
 
-Если теперь вернуться к примеру памяти на базе LUTRAM, то мы можем с уверенностью сказать, что рассмотренная в том примере память является simple dual port, так как имеет раздельные адреса для чтения и записи, а сами эти операции могут производиться одновременно.
+Ранее мы рассмотрели синхронные памяти с одним портом. Такие памяти позволяют одновременно читать или записывать только одно слово.
 
-### BRAM - true dual port
+Давайте теперь рассмотрим памяти с двумя портами. Начнём с так называемой "простой двухпортовой памяти" (Simple Dual Port). Эта память имеет два независимых порта, причём **один порт используется только для записи данных, а второй порт используется только для чтения**. 
 
-### BRAM - 2 clock
+```verilog
+module bram_dp_simple_1clk
+#(
+  parameter RAM_WIDTH     = 8,
+  parameter RAM_ADDR_BITS = 10
+)
+(
+  input  logic                     clk_i,
+  input  logic [RAM_ADDR_BITS-1:0] `,
+  inpu`t  logic [RAM_ADDR_BITS-1:0] `addr_b_i,
+  inpu`t  logic [RAM_WIDTH-1:0]     `data_a_i,
+  in`put  logic                     `we_a_i,
+  in``put  logic                     `en_b_i,
+  ou`tp`ut logic [RAM_WIDTH-1:0]     data_b_o
+);`
+
+  localparam RAM_DEPTH = 2**RAM_A`DDR_BITS;`````
+
+  logi`c [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
+  logic [RAM_WIDTH-1:0] ram_data_ff;
+
+  always_ff @(posedge clk_i) begin
+    if (we_a_i)
+      bram[addr_a_i] <= data_a_i;
+    if (en_b_i)
+      ram_data_ff <= bram[addr_b_i];
+  end
+
+  assign data_b_o = ram_data_ff;
+
+endmodule
+```
+
+Порты этой памяти мы будем называть "порт a" и "порт b". При этом порт a используется только для записи, а порт b только для чтения.
+
+Обратите внимание на обновленные входные и выходные сигналы примера выше:
+ * `addr_a_i` - адрес порта a, адрес для записи данных
+ * `addr_b_i` - адрес порта b, адрес для чтения данных
+ * `data_a_i` - входные данные порта a, данные для записи
+ * `we_a_i` - разрешение записи для порта a
+ * `en_b_i` - разрешение чтения для порта b
+ * `data_b_o` - результат чтения из порта a
 
 
+Также стоит обратить внимание на следующий `always_ff` блок:
+
+```verilog
+  always_ff @(posedge clk_i) begin
+    if (we_a_i)
+      bram[addr_a_i] <= data_a_i;
+    if (en_b_i)
+      ram_data_ff <= bram[addr_b_i];
+  end
+```
+
+В этом блоке между `if (we_a_i)` и `if (en_b_i)` отсутствует ключевое слово `else`, то есть обе проверки выполняются параллельно, и чтение никак не зависит от записи.
+
+Если теперь вернуться к примеру памяти на базе LUTRAM, то внимательный читатель сразу скажет, что рассмотренная в том примере память является simple dual port, так как имеет раздельные адреса для чтения и записи, а сами эти операции могут производиться одновременно.
+
+
+### BRAM - Настоящая двухпортовая память (True Dual Port)
+
+Следующий тип памяти - настоящая двухпортовая (True Dual Port). В такой памяти каждый порт работает независимо от другого, при этом на каждом порту возможно как читать, так и записывать данные.
+
+
+```verilog
+module bram_dp_true_1clk
+#(
+  parameter RAM_WIDTH     = 8,
+  parameter RAM_ADDR_BITS = 10
+)
+(
+  input  logic                     clk_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_a_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_b_i,
+  input  logic [RAM_WIDTH-1:0]     data_a_i,
+  input  logic [RAM_WIDTH-1:0]     data_b_i,
+  input  logic                     we_a_i,
+  input  logic                     we_b_i,
+  input  logic                     en_a_i,
+  input  logic                     en_b_i,
+  output logic [RAM_WIDTH-1:0]     data_a_o,
+  output logic [RAM_WIDTH-1:0]     data_b_o
+);
+
+  localparam RAM_DEPTH = 2**RAM_ADDR_BITS;
+
+  logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
+  logic [RAM_WIDTH-1:0] ram_data_a_ff;
+  logic [RAM_WIDTH-1:0] ram_data_b_ff;
+
+  always_ff @(posedge clk_i) begin
+    if (en_a_i) begin
+      if (we_a_i)
+        bram[addr_a_i] <= data_a_i;
+      else
+        ram_data_a_ff <= bram[addr_a_i];
+    end
+  end
+
+  always_ff @(posedge clk_i) begin
+    if (en_b_i) begin
+      if (we_b_i)
+        bram[addr_b_i] <= data_b_i;
+      else
+        ram_data_b_ff <= bram[addr_b_i];
+    end
+  end
+
+  assign data_a_o = ram_data_a_ff;
+  assign data_b_o = ram_data_b_ff;
+
+endmodule
+```
+
+Рассмотрим входные и выходные сигналы модуля.
+
+Порт a:
+  * `addr_a_i` - адрес порта a
+  * `data_a_i` - входные данные порта a, данные для записи
+  * `we_a_i` - разрешение записи для порта a
+  * `en_a_i` - разрешение чтения для порта a
+  * `data_a_o` - результат чтения из порта a
+
+Порт b:
+  * `addr_b_i` - адрес порта b
+  * `data_b_i` - входные данные порта b, данные для записи
+  * `we_b_i` - разрешение записи для порта b
+  * `en_b_i` - разрешение чтения для порта b
+  * `data_b_o` - результат чтения из порта b
+
+Логика работы каждого порта памяти одинакова и полностью повторяет логику работы однопортовой памяти "No Change mode".
+
+```verilog
+  always_ff @(posedge clk_i) begin
+    if (en_a_i) begin
+      if (we_a_i)
+        bram[addr_a_i] <= data_a_i;
+      else
+        ram_data_a_ff <= bram[addr_a_i];
+    end
+  end
+```
+
+### BRAM - Память с двумя тактовыми частотами
+
+#### Настоящая двухпортовая память (True Dual Port) с двумя тактовыми частотами
+
+Двухпортовая память с двумя тактовыми частотами почти не отличается от своих аналогов с одной тактовой частотой.
+
+
+Не отходя далеко от настоящей двухпортовой памяти, давайте поменяем её так, чтобы каждый порт теперь работал на своей собственной тактовой частоте.
+
+```verilog
+module bram_dp_true_2clk
+#(
+  parameter RAM_WIDTH     = 8,
+  parameter RAM_ADDR_BITS = 10
+)
+(
+  input  logic                     clk_a_i,
+  input  logic                     clk_b_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_a_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_b_i,
+  input  logic [RAM_WIDTH-1:0]     data_a_i,
+  input  logic [RAM_WIDTH-1:0]     data_b_i,
+  input  logic                     we_a_i,
+  input  logic                     we_b_i,
+  input  logic                     en_a_i,
+  input  logic                     en_b_i,
+  output logic [RAM_WIDTH-1:0]     data_a_o,
+  output logic [RAM_WIDTH-1:0]     data_b_o
+);
+
+  localparam RAM_DEPTH = 2**RAM_ADDR_BITS;
+
+  logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
+  logic [RAM_WIDTH-1:0] ram_data_a_ff;
+  logic [RAM_WIDTH-1:0] ram_data_b_ff;
+
+  always_ff @(posedge clk_a_i) begin
+    if (en_a_i) begin
+      if (we_a_i)
+        bram[addr_a_i] <= data_a_i;
+      else
+        ram_data_a_ff <= bram[addr_a_i];
+    end
+  end
+
+  always_ff @(posedge clk_b_i) begin
+    if (en_b_i) begin
+      if (we_b_i)
+        bram[addr_b_i] <= data_b_i;
+      else
+        ram_data_b_ff <= bram[addr_b_i];
+    end
+  end
+
+  assign data_a_o = ram_data_a_ff;
+  assign data_b_o = ram_data_b_ff;
+
+endmodule
+
+```
+
+Данный пример почти ничем не отличается от `bram_dp_true_1clk`, за исключением того, что теперь на вход подаются два сигнала тактовой частоты (`clk_a_i` и `clk_b_i`), и каждый из двух портов теперь тактируется от своей тактовой частоты.
+
+
+
+#### Простая двухпортовая память (Simple Dual Port) с двумя тактовыми частотами
+
+Давайте рассмотрим пример простой двухпортовой памяти с двумя тактовыми частотами:
+
+```verilog
+module bram_dp_simple_2clk
+#(
+  parameter RAM_WIDTH     = 8,
+  parameter RAM_ADDR_BITS = 10
+)
+(
+  input  logic                     clk_a_i,
+  input  logic                     clk_b_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_a_i,
+  input  logic [RAM_ADDR_BITS-1:0] addr_b_i,
+  input  logic [RAM_WIDTH-1:0]     data_a_i,
+  input  logic                     we_a_i,
+  input  logic                     en_b_i,
+  output logic [RAM_WIDTH-1:0]     data_b_o
+);
+
+  localparam RAM_DEPTH = 2**RAM_ADDR_BITS;
+
+  logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
+  logic [RAM_WIDTH-1:0] ram_data_ff;
+
+  always_ff @(posedge clk_a_i)
+    if (we_a_i)
+      bram[addr_a_i] <= data_a_i;
+
+  always_ff @(posedge clk_b_i)
+    if (en_b_i)
+      ram_data_ff <= bram[addr_b_i];
+
+  assign data_b_o = ram_data_ff;
+
+endmodule
+```
+
+В данном примере есть два `always_ff` блока, причем один (запись в память по порту a) работает от тактовой частоты `clk_a_i`, а второй блок (чтение из памяти по порту b) работает от тактовой частоты `clk_b_i`.
 
 ## Задание лабораторной работы
 
