@@ -30,7 +30,7 @@ module bram_1p_no_change
     end
   endgenerate
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_i) begin
       if (we_i)
         bram[addr_i] <= data_i;

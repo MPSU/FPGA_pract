@@ -17,7 +17,7 @@ module bram_1p_write_first
   logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
   logic [RAM_WIDTH-1:0] data_out_ff;
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_i) begin
       if (we_i) begin
         bram[addr_i] <= data_i;

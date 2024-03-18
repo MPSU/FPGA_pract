@@ -20,16 +20,16 @@ module bram_1p_out_reg
   logic [RAM_WIDTH-1:0] data_out_ff;
   logic [RAM_WIDTH-1:0] data_out_reg_ff;
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_i) begin
       if (we_i)
         bram[addr_i] <= data_i;
       else
-        data_out_ff    <= bram[addr_i];
+        data_out_ff  <= bram[addr_i];
     end
   end
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (rst_i)
       data_out_reg_ff <= {RAM_WIDTH{1'b0}};
     else if (reg_en_i)

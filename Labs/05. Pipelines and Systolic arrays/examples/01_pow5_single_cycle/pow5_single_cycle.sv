@@ -7,9 +7,9 @@ module pow5_mult_single_cycle
   output logic [(5*DATA_WIDTH)-1:0] pow_data_o
 );
 
-  logic [w_sw_actual-1:0]     pow_input_ff;
-  logic [(5*w_sw_actual)-1:0] pow5_mult;
-  logic [(5*w_sw_actual)-1:0] pow_output_ff;
+  logic [DATA_WIDTH-1:0]     pow_input_ff;
+  logic [(5*DATA_WIDTH)-1:0] pow5_mult;
+  logic [(5*DATA_WIDTH)-1:0] pow_output_ff;
 
   always_ff @ (posedge clk or posedge rst) begin
     if (rst)

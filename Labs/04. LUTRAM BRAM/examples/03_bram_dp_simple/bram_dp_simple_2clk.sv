@@ -16,14 +16,14 @@ module bram_dp_simple_2clk
 
   localparam RAM_DEPTH = 2**RAM_ADDR_BITS;
 
-  reg [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
-  reg [RAM_WIDTH-1:0] ram_data_ff;
+  logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
+  logic [RAM_WIDTH-1:0] ram_data_ff;
 
-  always @(posedge clk_a_i)
+  always_ff @(posedge clk_a_i)
     if (we_a_i)
       bram[addr_a_i] <= data_a_i;
 
-  always @(posedge clk_b_i)
+  always_ff @(posedge clk_b_i)
     if (en_b_i)
       ram_data_ff <= bram[addr_b_i];
 

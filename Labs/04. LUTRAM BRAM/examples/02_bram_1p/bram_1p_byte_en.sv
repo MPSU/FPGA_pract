@@ -17,23 +17,23 @@ module bram_1p_byte_en
   localparam RAM_DEPTH = 2**RAM_ADDR_BITS;
 
   logic [(NB_COL*COL_WIDTH)-1:0] bram [RAM_DEPTH-1:0];
-  logic [(NB_COL*COL_WIDTH)-1:0] read_data = {(NB_COL*COL_WIDTH){1'b0}};
+  logic [(NB_COL*COL_WIDTH)-1:0] read_data_ff;
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_i)
-      read_data <= bram[addr_i];
+      read_data_ff <= bram[addr_i];
   end
 
   generate
   genvar i;
      for (i = 0; i < NB_COL; i = i+1) begin: byte_write
-       always @(posedge clk_i)
+       always_ff @(posedge clk_i)
          if (en_i)
            if (we_i[i])
              bram[addr_i][(i+1)*COL_WIDTH-1:i*COL_WIDTH] <= data_i[(i+1)*COL_WIDTH-1:i*COL_WIDTH];
       end
   endgenerate
 
-  assign data_o = read_data;
+  assign data_o = read_data_ff;
 
 endmodule

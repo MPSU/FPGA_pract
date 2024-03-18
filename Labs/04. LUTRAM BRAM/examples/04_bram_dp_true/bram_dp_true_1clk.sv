@@ -24,7 +24,7 @@ module bram_dp_true_1clk
   logic [RAM_WIDTH-1:0] ram_data_a_ff;
   logic [RAM_WIDTH-1:0] ram_data_b_ff;
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_a_i) begin
       if (we_a_i)
         bram[addr_a_i] <= data_a_i;
@@ -33,7 +33,7 @@ module bram_dp_true_1clk
     end
   end
 
-  always @(posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (en_b_i) begin
       if (we_b_i)
         bram[addr_b_i] <= data_b_i;
