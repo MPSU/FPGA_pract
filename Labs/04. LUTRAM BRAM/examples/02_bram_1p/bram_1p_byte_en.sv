@@ -1,4 +1,3 @@
-  //  Xilinx Single Port Byte-Write Read First RAM
 module bram_1p_byte_en
 #(
   parameter NB_COL = 4,

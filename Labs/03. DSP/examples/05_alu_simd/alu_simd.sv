@@ -3,7 +3,8 @@ module alu_simd
 #(
   parameter N = 4,    // Number of Adders
   parameter W = 10    // Width of the Adders
-)(
+)
+(
   input  logic         clk_i,
   input  logic         rst_i,
   input  logic [W-1:0] a_i   [N-1:0],

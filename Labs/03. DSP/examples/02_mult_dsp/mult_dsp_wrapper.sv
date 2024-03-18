@@ -1,4 +1,10 @@
-module mult_dsp_wrapper(
+module mult_dsp_wrapper
+#(
+  parameter A_WIDTH = 25,
+  parameter B_WIDTH = 18,
+  parameter R_WIDTH = A_WIDTH + B_WIDTH
+)
+(
   input  logic        clk_i,
   input  logic        rst_i,
   input  logic [24:0] a_i,
@@ -22,7 +28,13 @@ module mult_dsp_wrapper(
     end
   end
 
-  mult_dsp i_mult(
+  mult_dsp
+  #(
+    .A_WIDTH (A_WIDTH),
+    .B_WIDTH (B_WIDTH)
+  )
+    i_mult
+  (
     .clk_i (clk_i),
     .rst_i (rst_i),
     .a_i   (a_ff),

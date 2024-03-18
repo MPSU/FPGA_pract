@@ -1,11 +1,11 @@
-module pre_adder(
+module pre_adder
+(
   input  logic               clk_i,
   input  logic               rst_i,
   input  logic signed [23:0] a_i,
   input  logic signed [17:0] b_i,
   input  logic signed [23:0] c_i,
   output logic signed [42:0] res_o
-
 );
 
   logic signed [23:0] a_ff;

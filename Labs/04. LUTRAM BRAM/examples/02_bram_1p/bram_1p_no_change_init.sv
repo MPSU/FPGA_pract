@@ -18,7 +18,6 @@ module bram_1p_no_change
   logic [RAM_WIDTH-1:0] bram [RAM_DEPTH-1:0];
   logic [RAM_WIDTH-1:0] data_out_ff;
 
-
   generate
     if (INIT_FILE != "") begin: use_init_file
       initial
@@ -30,7 +29,6 @@ module bram_1p_no_change
           bram[ram_index] = {RAM_WIDTH{1'b0}};
     end
   endgenerate
-
 
   always @(posedge clk_i) begin
     if (en_i) begin
