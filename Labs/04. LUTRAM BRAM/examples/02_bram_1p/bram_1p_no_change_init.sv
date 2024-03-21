@@ -35,7 +35,7 @@ module bram_1p_no_change
       if (we_i)
         bram[addr_i] <= data_i;
       else
-        data_out_ff    <= bram[addr_i];
+        data_out_ff  <= bram[addr_i];
     end
   end
 

@@ -1,0 +1,95 @@
+bram_1p_byte_en
+{
+  signal: [
+  {name: 'clk_i' , wave: 'p.....|.........'},
+  {name: 'addr_i', wave: 'x3.4.x|x5.5.5.5.', data: ['address 1','address 2','address 3','address 3','address 3','address 3']},
+  {name: 'data_i', wave: 'x3.4.x|.x.6.7.x.', data: ['data 1','data 2','data 4','data 5']},
+  {name: 'we_i'  , wave: 'x3x4xx|x..6x7x..',data: ['1111','1111','0011','1100'] },
+  {name: 'en_i'  , wave: '01010.|.10101010' },
+  {                              node: '..A...B..CDEFGHIJ',  phase:1 },
+  {},
+  {name: 'new data in mem', wave:  'x3.4.x|...5676x.', data: ['data1','data2','data3','data4','data5','data4']},
+  {                              node: '...........K.L.M',  phase:1 },
+  {name: 'data_o', wave:  'x....x|.5.5.5676', data: ['data 3','data3','data3','data4','data5','data4']},
+  {                              node: '.............N.O.P',  phase:1 }
+  
+],
+edge: [
+  'A+B writing first time', 'C+D read','E+F write','G+H write','I+J read',
+  'K+L one word', 'L+M one word', 
+  'N+O one word', 'O+P one word'
+]
+}
+bram_1p_no_change
+{
+  signal: [
+  {name: 'clk_i' , wave: 'p.....|.......'},
+  {name: 'addr_i', wave: 'x3.4.x|.5.6.7.', data: ['address 1','address 2','address 3','address 4','address 5']},
+  {name: 'data_i', wave: 'x3.4.x|.x.6.7.', data: ['data 1','data 2','data 4','data 5']},
+  {name: 'we_i'  , wave: '01010.|...1010' },
+  {name: 'en_i'  , wave: '01010.|.101010' },
+  {                              node: '..A...B..CDEFGH',  phase:1 },
+  {name: 'new data in mem', wave: 'x3.4.x|...6.7.', data: ['data 1','data 2','data 4','data 5','data 5']},
+  {},
+  {name: 'data_o', wave:  'x....x|.5.....', data: ['data 1','data 4']}
+],
+edge: [
+  'A+B writing first time', 'C+D read','E+F write','G+H write'
+]
+}
+bram_1p_out_reg
+{
+  signal: [
+  {name: 'clk_i' , wave: 'p.....|........'},
+  {name: 'rst_i' , wave: '10.............'},
+  {name: 'addr_i', wave: 'x3.4.x|.5..6.7.', data: ['address 1','address 2','address 3','address 4','address 5']},
+  {name: 'data_i', wave: 'x3.4.x|.x....7.', data: ['data 1','data 2','data 5']},
+  {name: 'we_i'  , wave: '01010x|0.....10' },
+  {name: 'en_i'  , wave: '01010x|010.1010' },
+  {name: 'reg_en_i'  , wave: '0....x|0..1010.' },
+  {                              node: '..A...B..CDEFGHL',  phase:1 },
+  {},
+  {name: 'data_in_reg_o', wave: 'x....x|.5..6...', data: ['data 3','data 4','data 5']},
+  {},
+  {name: 'data_o', wave:  'x....x|...5.6..', data: ['data 1','data 4','data 5']}
+],
+edge: [
+  'A+B writing first time', 'C+D set','E+F read','F+G set','G+H read','H+L write'
+]
+}
+
+bram_1p_read_first
+{
+  signal: [
+  {name: 'clk_i' , wave: 'p............'},
+  {name: 'addr_i', wave: 'x3.4.x.5.6.6.', data: ['address 1','address 2','address 3','address 4','address 4']},
+  {name: 'data_i', wave: 'x3.4.x.x.6.7.', data: ['data 1','data 2','data 4','data 5']},
+  {name: 'we_i'  , wave: '01010x0..1010' },
+  {name: 'en_i'  , wave: '01010x0101010' },
+  {                              node: '..A...B.CDEFGH',  phase:1 },
+  {name: 'new data in mem', wave: 'x3.4.x...6.7.', data: ['data 1','data 2','data 4','data 5','data 5']},
+  {}, 
+  {name: 'data_o', wave:  'x....x.5...6.', data: ['data 1','data 4']}
+],
+edge: [
+  'A+B writing first time', 'C+D read','E+F write','H+G write'
+]
+}
+
+bram_1p_write_first
+{
+  signal: [
+  {name: 'clk_i' , wave: 'p...........'},
+  {name: 'addr_i', wave: 'x3.4.x|.5.6.', data: ['address 1','address 2','address 3','address 4']},
+  {name: 'data_i', wave: 'x3.4.x|.x...', data: ['data 1','data 2']},
+  {name: 'we_i'  , wave: '01010.....10' },
+  {name: 'en_i'  , wave: '01010.|.1010' },
+  {                              node: '..A...B..CDEFGHL',  phase:1 },
+  {name: 'new data in mem', wave: 'x3.4.x|...6.', data: ['data 1','data 2','data 4']},
+  {},
+  {name: 'data_o', wave: 'x3.4.x|.5.6.', data: ['data 1','data 2','data 3','data 4']}
+],
+edge: [
+  'A+B writing first time', 'C+D read','E+F write'
+]
+}
