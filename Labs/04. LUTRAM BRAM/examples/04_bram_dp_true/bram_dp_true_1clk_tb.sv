@@ -101,6 +101,8 @@ task requset_write_both();
     en_b_i   = '1;
     data_b_i = $urandom_range(0, 2**RAM_WIDTH - 1);
   #5; @(posedge clk_i)
+    en_a_i = '0;
+    en_b_i = '0;
     we_a_i = '0;
     we_b_i = '0;
 endtask
@@ -112,6 +114,7 @@ task requset_write_a();
     en_a_i   = '1;
     data_a_i = $urandom_range(0, 2**RAM_WIDTH - 1);
   #5; @(posedge clk_i)
+    en_a_i = '0;
     we_a_i = '0;
 endtask
 
@@ -122,6 +125,7 @@ task requset_write_b();
     en_b_i   = '1;
     data_b_i = $urandom_range(0, 2**RAM_WIDTH - 1);
   #5; @(posedge clk_i)
+    en_b_i = '0;
     we_b_i = '0;
 endtask
 //------------------------------------------------- READ MODULE

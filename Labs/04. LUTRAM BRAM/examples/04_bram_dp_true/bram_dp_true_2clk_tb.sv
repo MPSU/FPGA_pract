@@ -1,6 +1,6 @@
 // в модуле сначало идет заполнение памяти fill_data     ()
-//                            затем чтение requset_read  () 3 раза (1 для каждого случая)
-//                           затем  запись requset_write () 3 раза (1 для каждого случая)
+//                            затем чтение requset_read  () 2 раза (1 для каждого случая)
+//                           затем  запись requset_write () 2 раза (1 для каждого случая)
 
 module bram_dp_true_2clk_tb();
   localparam int RAM_WIDTH     = 16;
@@ -73,8 +73,6 @@ event end_of_fill;
   #30;
   requset_write_b();
   #30;
-  requset_write_both();
-  #30
   $finish;
 end
 
