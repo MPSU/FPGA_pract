@@ -1,9 +1,12 @@
+// в модуле сначало идет заполнение памяти fill_data()
+//                            затем чтение requset_read()  3 раза
+//                            затем запись requset_write() 3 раза
 
 module bram_1p_no_change_tb();
 
-  localparam  RAM_WIDTH     = 16; 
-  localparam  RAM_ADDR_BITS = 3;
-  localparam  RAM_DEPTH     = 2**RAM_ADDR_BITS;
+  localparam int RAM_WIDTH     = 16;
+  localparam int RAM_ADDR_BITS = 3;
+  localparam int RAM_DEPTH     = 2**RAM_ADDR_BITS;
 
   logic                           clk_i;
   logic [ RAM_ADDR_BITS - 1 : 0 ] addr_i;
@@ -33,7 +36,7 @@ initial begin
 end
 //------------------------------------------------- WRITE MODULE
 int p;
-event end_of_write;
+event end_of_fill;
 
 initial begin
   #10;
@@ -41,19 +44,24 @@ initial begin
   we_i = '0;
 
   repeat(RAM_DEPTH)begin// заполнение памяти
-    requset_write(); #5;
+    fill_data(); #5;
     p = p + 1;
   end
 
-  ->end_of_write; 
-  wait(end_of_reading.triggered)
-  forever begin
-    requset_replace_word();
-    #40;
-  end
+  ->end_of_fill;
+  wait(end_of_read.triggered) // ждем окончания чтения
+
+  #10;                  // запись в память
+  requset_write();
+  #30;
+  requset_write();
+  #30;
+  requset_write();
+  #30;
+  $finish;
 end
 
-task requset_write();
+task fill_data();
   @(posedge clk_i)
     we_i   = '1;
     en_i   = '1;
@@ -64,7 +72,7 @@ task requset_write();
     we_i = '0;
 endtask
 
-task requset_replace_word();
+task requset_write();
   @(posedge clk_i)
     addr_i = $urandom_range(0, RAM_DEPTH - 1);
     we_i   = '1;
@@ -75,15 +83,17 @@ task requset_replace_word();
     we_i = '0;
 endtask
 //------------------------------------------------- READ MODULE
-event end_of_reading;
+event end_of_read;
 initial begin
-  wait(end_of_write.triggered)
-  #10;
+  wait(end_of_fill.triggered)     // ждем окончания заполнения памяти
+  #10;                            // чтение из памяти
   requset_read();
   #30;
   requset_read();
   #30;
-  ->end_of_reading;
+  requset_read();
+  #30;
+  ->end_of_read;
 end
 
 task requset_read();

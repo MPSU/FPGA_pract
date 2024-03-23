@@ -1,8 +1,8 @@
-module bram_1p_no_change
+module bram_1p_no_change_init
 #(
   parameter RAM_WIDTH     = 8,
   parameter RAM_ADDR_BITS = 10,
-  parameter INIT_FILE      = ""
+  parameter INIT_FILE     = ""
 )
 (
   input  logic                     clk_i,
