@@ -111,6 +111,7 @@ task requset_read();
     addr_i = $urandom_range(0, RAM_DEPTH - 1);
   #5; @(posedge clk_i);
     en_i     = 1'b0;
+    addr_i   = 'x;
   #15; @(posedge clk_i);
     reg_en_i = 1'b1;
   #5; @(posedge clk_i);
