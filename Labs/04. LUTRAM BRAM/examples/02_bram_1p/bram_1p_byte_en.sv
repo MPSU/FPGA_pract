@@ -2,9 +2,8 @@ module bram_1p_byte_en
 #(
   parameter NB_COL = 4,
   parameter COL_WIDTH = 8,
-  parameter RAM_ADDR_BITS = 10,
-)
-(
+  parameter RAM_ADDR_BITS = 10
+)(
   input  logic                           clk_i,
   input  logic [RAM_ADDR_BITS-1:0]       addr_i,
   input  logic [(NB_COL*COL_WIDTH)-1:0]  data_i,
