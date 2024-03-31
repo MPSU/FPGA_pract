@@ -25,18 +25,18 @@ bram_1p_byte_en
         {name: 'clk_i',           wave: 'p....|........'                                                    },
         {name: 'addr_i',          wave: 'x34x.|x35x5x5x', data: ['add1','add2','add1','add3','add3','add3'] },
         {name: 'data_i',          wave: 'x34x.|.x6x7x..', data: ['data1','data2','data4','data5']           },
-        {name: 'we_i',            wave: 'x34x.|x26x7x2x', data: ['1111','1111','0000','0011','1100','0000'] },
+        {name: 'we_i',            wave: 'x34x.|x22x2x2x', data: ['1111','1111','0000','0011','1100','0000'] },
         {name: 'en_i',            wave: '01.0.|.1.01010'                                                    },
         {node:                          '.A.B...CDFGHIJ'                                                    },
-        {},
-        {name: 'new data in mem', wave: 'x...3.4.x.|.......56xx76x...', data: ['data1','data2','d3','d4','d5','d4'], "period": 0.5 },
-        {node:                          '.........KLQM'                                                                            },
+      //  {},
+      //{name: 'new data in mem', wave: 'x...3.4.x.|.......56xx76x...', data: ['data1','data2','d3','d4','d5','d4'], "period": 0.5 },
+      //{node:                          '.........KLQM'                                                                            },
         {name: 'data_o',          wave: 'x.........|.....3.5...56x.76', data: ['data1','data3','d3','d4','d5','d4'], "period": 0.5 },
         {node:                          '...........NOEP'                                                                          }
       ],
       edge: [
           'A+B wr first time', 'C+D read','D+F write','G+H write','I+J read',
-          'K+L one word', 'Q+M one word',
+       // 'K+L one word', 'Q+M one word',
           'N+O one word', 'E+P one word'
         ],
       config: { hscale: 2 }
