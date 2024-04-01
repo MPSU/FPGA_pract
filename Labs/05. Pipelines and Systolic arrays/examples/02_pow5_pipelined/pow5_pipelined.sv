@@ -2,7 +2,7 @@ module pow5_pipelined
 #(
   parameter DATA_WIDTH = 8
 )
-( 
+(
   input  logic                      clk_i,
   input  logic                      rst_i,
   input  logic [DATA_WIDTH-1:0]     pow_data_i,

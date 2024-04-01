@@ -2,7 +2,7 @@ module pow5_pipelined_valid
 #(
   parameter DATA_WIDTH = 8
 )
-( 
+(
   input  logic                      clk_i,
   input  logic                      rst_i,
   input  logic [DATA_WIDTH-1:0]     pow_data_i,
@@ -72,7 +72,7 @@ module pow5_pipelined_valid
     if (rst_i)
       pow_input_ff <= '0;
     else
-      pow_input_ff <= sw;
+      pow_input_ff <= pow_data_i;
 
   always_ff @ (posedge clk_i or posedge rst_i)
     if (rst_i)
