@@ -112,7 +112,7 @@ module mult_dsp_async
   output logic signed [R_WIDTH-1:0] res_o
 );
 
-  assign res_o = a_ff * b_ff;
+  assign res_o = a_i * b_i;
 
 endmodule
 ```
