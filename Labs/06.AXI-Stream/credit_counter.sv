@@ -4,12 +4,12 @@ module credit_counter #(
   input  logic clk_i,
   input  logic rst_i,
 
-  input  logic valid_i,
-  input  logic pop,
+  input  logic valid_i,   //from upstream
+  input  logic pop,       //from downstream
   output logic ready_cred
 );
 
-logic [$clog2(DEPTH+1) - 1 : 0 ] counter;
+logic [$clog2(DEPTH+1) - 1 : 0] counter;
 
 always_ff @(posedge clk_i) begin
   if(rst_i)
@@ -24,6 +24,6 @@ always_ff @(posedge clk_i) begin
   end
 end
 
-assign ready_cred = (counter == 0)? 1'b0 : 1'b1;
+assign ready_cred = (counter == 0)? 1'b0 : 1'b1;  // ready for next writing in FIFO until counter != 0
 
 endmodule
