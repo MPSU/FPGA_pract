@@ -7,31 +7,31 @@ input logic                       rst_i,
   // upstream
 input  logic [DATA_WIDTH - 1 : 0] data_i,
 input  logic                      valid_i,
-output logic                      ready_o,
+output logic                      ready_o, // can called: can write
   // downstream
 input  logic                      ready_i,
-output logic                      valid_o,
+output logic                      valid_o, // can called: can read
 output logic [DATA_WIDTH - 1 : 0] data_o
 );
 
 localparam int POINTER_WIDTH = $clog2(DEPTH);
 localparam [POINTER_WIDTH - 1:0] max_pointer = POINTER_WIDTH' (DEPTH - 1);
 
-logic                         can_read, can_write; // can called: empty, full
+logic                         empty, full;
 logic [DATA_WIDTH    - 1 : 0] fifo [DEPTH];
 logic [POINTER_WIDTH - 1 : 0] wr_pointer,    rd_pointer;
 logic                         wr_odd_circle, rd_odd_circle;
 
 
 
-assign can_read   = (wr_pointer == rd_pointer) & (wr_odd_circle == rd_odd_circle);// pointer = {wr/rd odd, wr/rd pointer} watch
-assign can_write  = (wr_pointer == rd_pointer) & (wr_odd_circle != rd_odd_circle);// Занятие 17 школа синтеза {23:40}
+assign empty = (wr_pointer == rd_pointer) & (wr_odd_circle == rd_odd_circle);// pointer = {wr/rd odd, wr/rd pointer} watch
+assign full  = (wr_pointer == rd_pointer) & (wr_odd_circle != rd_odd_circle);// Занятие 17 школа синтеза {23:40}
 
-assign pop     = ~can_read & ready_i;
-assign push    = ~can_write  & valid_i;
+assign pop     = ~empty & ready_i;
+assign push    = ~full  & valid_i;
 
-assign valid_o = ~can_read;
-assign ready_o = ~can_write;
+assign valid_o = ~empty;
+assign ready_o = ~full;
 
 always_ff @(posedge clk_i) begin
   if(rst_i)begin

@@ -65,10 +65,13 @@ module fifo_ready_valid_tb;
 
 
 task automatic wr_fifo();
+  if(ready_o)begin
   @(posedge clk_i)
     data_i  <= $urandom_range(2**DATA_WIDTH-1, 0);
     valid_i <= 1'b1;
   #5;@(posedge clk_i)
+    valid_i <= 1'b0;
+  end else
     valid_i <= 1'b0;
 endtask
 

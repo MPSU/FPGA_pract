@@ -1,7 +1,7 @@
 
 module top_credit_pipelined_tb;
 
-  localparam int DATA_WIDTH = 3;
+  parameter int DATA_WIDTH = 3;
 
   logic                      clk_i;
   logic                      rst_i;

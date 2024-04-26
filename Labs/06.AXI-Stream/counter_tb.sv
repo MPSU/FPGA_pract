@@ -2,7 +2,7 @@
 module credit_counter_tb;
 
   // Parameters
-  localparam int DEPTH = 10;
+  parameter int DEPTH = 10;
 
   //Ports
   logic clk_i;
