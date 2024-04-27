@@ -1,8 +1,8 @@
-module bram_1p_no_change
+module bram_1p_no_change_init
 #(
   parameter RAM_WIDTH     = 8,
   parameter RAM_ADDR_BITS = 10,
-  parameter INIT_FILE      = ""
+  parameter INIT_FILE     = ""
 )
 (
   input  logic                     clk_i,
@@ -35,7 +35,7 @@ module bram_1p_no_change
       if (we_i)
         bram[addr_i] <= data_i;
       else
-        data_out_ff    <= bram[addr_i];
+        data_out_ff  <= bram[addr_i];
     end
   end
 

@@ -1,0 +1,215 @@
+lutram
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|.....'                                  },
+        {name: 'waddr_i',         wave: 'x34x.|6x...', data: ['add1', 'add2', 'add4' ] },
+        {name: 'wdata_i',         wave: 'x34x.|6x...', data: ['data1','data2','data4'] },
+        {name: 'we_i',            wave: '01.0.|10...'                                  },
+        {node:                          '.A.B..EF'                                     },
+        {name: 'new data in mem', wave: 'x.34x|.6x..', data: ['data1','data2','data4'] },
+        {},
+        {name: 'clk_i',           wave: 'p....|.....'                                              },
+        {name: 'raddr_i',         wave: 'x.....|.5.6.', data: ['address 3','address 4'], phase:0.8 },
+        {name: 'rdata_o',         wave: 'x.....|.5.6.', data: ['data 3','data 4'],       phase:0.8 },
+        {node:                          '. .....G...H' }
+      ],
+      edge: [
+        'A+B wr first time','E+F write',
+        ,'G+H asynchronous read'
+      ]
+      }
+
+bram_1p_byte_en
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|........'                                                    },
+        {name: 'addr_i',          wave: 'x34x.|x35x5x5x', data: ['add1','add2','add1','add3','add3','add3'] },
+        {name: 'data_i',          wave: 'x34x.|.x6x7x..', data: ['data1','data2','data4','data5']           },
+        {name: 'we_i',            wave: 'x34x.|x22x2x2x', data: ['1111','1111','0000','0011','1100','0000'] },
+        {name: 'en_i',            wave: '01.0.|.1.01010'                                                    },
+        {node:                          '.A.B...CDFGHIJ'                                                    },
+      //  {},
+      //{name: 'new data in mem', wave: 'x...3.4.x.|.......56xx76x...', data: ['data1','data2','d3','d4','d5','d4'], "period": 0.5 },
+      //{node:                          '.........KLQM'                                                                            },
+        {name: 'data_o',          wave: 'x.........|.....3.5...56x.76', data: ['data1','data3','d3','d4','d5','d4'], "period": 0.5 },
+        {node:                          '...........NOEP'                                                                          }
+      ],
+      edge: [
+          'A+B wr first time', 'C+D read','D+F write','G+H write','I+J read',
+       // 'K+L one word', 'Q+M one word',
+          'N+O one word', 'E+P one word'
+        ],
+      config: { hscale: 2 }
+      }
+
+bram_1p_no_change
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|......'                                                  },
+        {name: 'addr_i',          wave: 'x34x.|56x7x.', data: ['add1', 'add2', 'add3', 'add4', 'add5' ] },
+        {name: 'data_i',          wave: 'x34x.|x6x7x.', data: ['data1','data2','data4','data5']         },
+        {name: 'we_i',            wave: '01.0.|.1010.'                                                  },
+        {name: 'en_i',            wave: '01.0.|1.010.'                                                  },
+        {node:                          '.A.B..CDFGH.'                                                  },
+        {name: 'new data in mem', wave: 'x.34x|..6x7x', data: ['data1','data2','data4','data5','data5'] },
+        {},
+        {name: 'data_o',          wave: 'x...x|.5....', data: ['data3']                                 }
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','D+F write','G+H write'
+      ]
+      }
+
+bram_1p_out_reg
+      {
+        signal: [
+        {name: 'clk_i',         wave: 'p...|.......'                                                 },
+        {name: 'rst_i',         wave: '10..|.......'                                                 },
+        {name: 'addr_i',        wave: 'x34x|5x.6x7x', data: ['add1', 'add2', 'add3', 'add4', 'add5' ]},
+        {name: 'data_i',        wave: 'x34x|..x..7x', data: ['data1','data2','data5']                },
+        {name: 'we_i',          wave: '01.0|.....10'                                                 },
+        {name: 'en_i',          wave: '01.0|10.1010'                                                 },
+        {name: 'reg_en_i',      wave: '0...|..1010.'                                                 },
+        {node:                        '.A.B...EFGHL'                                                 },
+        {},
+        {name: 'data_in_reg_o', wave: 'x...|.5..6..', data: ['data3','data4','data5']                },
+        {},
+        {name: 'data_o',        wave: 'x...|...5.6.', data: ['data3','data4','data5']                }
+      ],
+      edge: [
+        'A+B wr first time','E+F read','G+H read','H+L write'
+      ]
+      }
+
+bram_1p_read_first
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|......'                                                  },
+        {name: 'addr_i',          wave: 'x34x.|3x5...', data: ['add1', 'add2', 'add1', 'add3', 'add3' ] },
+        {name: 'data_i',          wave: 'x34x.|x.6x7x', data: ['data1','data2','data4','data5']         },
+        {name: 'we_i',            wave: '01.0.|..1010'                                                  },
+        {name: 'en_i',            wave: '01.0.|101010'                                                  },
+        {node:                          '.A.B..CDEFGH'                                                  },
+        {name: 'new data in mem', wave: 'x.34x|...6x7', data: ['data1','data2','data4','data5','data5'] },
+        {},
+        {name: 'data_o',          wave: 'x...x|.3.5.6', data: ['data1','data3','data4']                 }
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','E+F write','H+G write'
+      ]
+      }
+
+bram_1p_write_first
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|....'                                          },
+        {name: 'addr_i',          wave: 'x34x.|5x6x', data: ['add1', 'add2', 'add3', 'add4']  },
+        {name: 'data_i',          wave: 'x34x.|.x..', data: ['data1','data2']                 },
+        {name: 'we_i',            wave: '01.0.|..10'                                          },
+        {name: 'en_i',            wave: '01.0.|1010'                                          },
+        {node:                          '.A.B..CDEFGHL'                                       },
+        {name: 'new data in mem', wave: 'x.34x|...6', data: ['data1','data2','data4']         },
+        {},
+        {name: 'data_o',          wave: 'x.34.|.5.6', data: ['data1','data2','data3','data4'] }
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','E+F write'
+      ]
+      }
+
+bram_dp_simple_1clk
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|....'                                          },
+        {name: 'addr_a_i',        wave: 'x34x.|6x8x', data: ['add1', 'add2', 'add4', 'add8' ] },
+        {name: 'data_a_i',        wave: 'x34x.|6x8x', data: ['data1','data2','data4','data8'] },
+        {name: 'we_a_i',          wave: '01.0.|1010'                                          },
+        {node:                          '.A.B..EFGH'                                          },
+        {name: 'new data in mem', wave: 'x.34x|.6x8', data: ['data1','data2','data4','data8'] },
+        {},
+        {name: 'clk_i',           wave: 'p....|....'                          },
+        {name: 'addr_b_i',        wave: 'x...x|.57.', data: ['add3', 'add5' ] },
+        {name: 'data_b_o',        wave: 'x...x|..57', data: ['data3','data5'] },
+        {name: 'en_b_i',          wave: '0....|.1.0'                          },
+        {node:                          '.......CDI'                          },
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','E+F write','G+H R n W','D+I R n W'
+      ]
+      }
+
+bram_dp_simple_2clk
+    {
+        signal: [
+        {name: 'clk_a_i',         wave: 'p....|......'                                        		      },
+        {name: 'addr_a_i',        wave: 'x34x.|6x8x4x', data: ['add1', 'add2', 'add4', 'add8', 'add2' ] },
+        {name: 'data_a_i',        wave: 'x34x.|6x8x4x', data: ['data1','data2','data4','data8','data2'] },
+        {name: 'we_a_i',          wave: '01.0.|101010'                                          	    	},
+        {node:                          '.A.B..EFGHNT'                                         		    	},
+        {name: 'new data in mem', wave: 'x.34x|.6x8x4', data: ['data1','data2','data4','data8','data2'] },
+        {},
+        {name: 'clk_b_i',         wave: 'p|....',                                   "period": 2 },
+        {name: 'addr_b_i',        wave: 'x|5x7x', data: ['add3', 'add5', 'data4'],  "period": 2 },
+        {name: 'en_b_i',          wave: '0|1010',                                   "period": 2 },
+        {node:                          '..CDYP',                                   "period": 2 },
+        {name: 'data_b_o',        wave: 'x|.5.7', data: ['data3','data5','data4'],  "period": 2 }
+      ],
+      edge: [
+        'A+B wr first time','E+F write','G+H write','N+T write',
+        'C+D read','Y+P read'
+      ]
+      }
+
+bram_dp_true_1clk
+      {
+        signal: [
+        {name: 'clk_i',           wave: 'p....|......',                                                        },
+        {name: 'addr_a_i',        wave: 'x34x.|56x7x.', data: ['add1', 'add2', 'add3', 'add4', 'add5']         },
+        {name: 'data_a_i',        wave: 'x34x.|x6x7x.', data: ['data1','data2','data4','data5']                },
+        {name: 'we_a_i',          wave: '01.0.|.1010.'                                                         },
+        {name: 'en_a_i',          wave: '01.0.|1.010.'                                                         },
+        {node:                          '.A.B..CDFGH.',                                                        },
+        {name: 'new data in mem', wave: 'x.34x|..6x7x', data: ['data1','data2','data4','data5','data5']        },
+        {name: 'data_a_o',        wave: 'x...x|.5....', data: ['data3']                                        },
+        {},
+        {name: 'clk_i',           wave: 'p....|......',                                                        },
+        {name: 'addr_b_i',        wave: 'x56x.|84x37x', data: ['add3', 'add4', 'add8', 'add2', 'add1', 'add5'] },
+        {name: 'data_b_i',        wave: 'x56x.|x4x...', data: ['data3','data4','data2']                        },
+        {name: 'we_b_i',          wave: '01.0.|.10...'                                                         },
+        {name: 'en_b_i',          wave: '01.0.|1.01.0'                                                         },
+        {node:                          '.J.K..LMPQ.R',                                                        },
+        {name: 'new data in mem', wave: 'x.56x|..4x..', data: ['data3','data4','data2']                        },
+        {name: 'data_b_o',        wave: 'x...x|.8..37', data: ['data8','data1','data5']                        }
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','D+F write','G+H write',
+        'J+K wr first time', 'L+M read','M+P write','Q+R read'
+      ]
+      }
+
+bram_dp_true_2clk
+      {
+        signal: [
+        {name: 'clk_a_i',         wave: 'p......|..............',                                                                                   },
+        {name: 'addr_a_i',        wave: 'x3478x.|.56x7x.864x...', data: ['add1', 'add2', 'add5', 'add6', 'add3', 'add4','add5','add6','add4','add2']},
+        {name: 'data_a_i',        wave: 'x3478x.|.x6x7x........', data: ['data1','data2','data5','data6','data4','data5' ]                          },
+        {name: 'we_a_i',          wave: '01...0.|..1010........'                                                                                    },
+        {name: 'en_a_i',          wave: '01...0.|.1.010.1..0...'                                                                                    },
+        {node:                          '.A...B...CDFGH.N..T...',                                                                                   },
+        {name: 'new data in mem', wave: 'x.3478x|...6x7x.......', data: ['data1','data2','data5','data6','data4','data5']                           },
+        {name: 'data_a_o',        wave: 'x.....x|..5.....864x..', data: ['data3','data6','data4','data2']                                           },
+        {},
+        {name: 'clk_b_i',         wave: 'p....|.....'                                                     ,"period": 2},
+        {name: 'addr_b_i',        wave: 'x56x.|84x3x', data: ['add3','add4','add6','add2','add1','add5']  ,"period": 2},
+        {name: 'data_b_i',        wave: 'x56x.|x4x..', data: ['data3','data4','data2']                    ,"period": 2},
+        {name: 'we_b_i',          wave: '01.0.|.10..'                                                     ,"period": 2},
+        {name: 'en_b_i',          wave: '01.0.|1.010'                                                     ,"period": 2},
+        {node:                          '.J.K..LMPQR'                                                     ,"period": 2},
+        {name: 'new data in mem', wave: 'x.56x|..4x.', data: ['data3','data4','data2']                    ,"period": 2},
+        {name: 'data_b_o',        wave: 'x...x|.8..3', data: ['data6','data1']                            ,"period": 2}
+      ],
+      edge: [
+        'A+B wr first time', 'C+D read','D+F write','G+H write','N+T read',
+        'J+K wr first time', 'L+M read','M+P write','Q+R read'
+      ]
+      }
