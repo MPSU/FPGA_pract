@@ -17,7 +17,7 @@ module pow5_mult_single_cycle
     if (rst_i)
       pow_input_ff <= '0;
     else
-      pow_input_ff <= sw;
+      pow_input_ff <= pow_data_i;
   end
 
   assign pow5_mult = pow_input_ff * pow_input_ff * pow_input_ff * pow_input_ff * pow_input_ff;
