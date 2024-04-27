@@ -5,7 +5,7 @@ module credit_counter_tb;
 localparam int CLK_TIME = 5;
 localparam int CYCLE    = 2*CLK_TIME;
 
-parameter int DEPTH = CYCLE;
+parameter int DEPTH = 10;
 
 //Ports
 logic clk_i;
