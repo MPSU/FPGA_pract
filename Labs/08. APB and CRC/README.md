@@ -386,7 +386,7 @@ end
 assign data_valid_i = (cs &  p_we_i & (p_adr_i[3:0] == 4'd0));
 
 //Для записи данных для расчета crc используем адрес 0
-assign din_i = (cs & p_we_i & (p_adr_i[3:0] == 4'd0));
+assign din_i        = (cs & p_we_i & p_adr_i[3:0]  == 4'd0) ? p_dat_i[7:0]: 8'd0;
 
 //Для чтения crc используем адрес 4
 assign crc_rd = (cs & ~p_we_i & (p_adr_i[3:0] == 4'd4));
