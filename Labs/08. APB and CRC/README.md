@@ -328,6 +328,7 @@ module wrapper_crc8
   input  logic [31:0] p_adr_i,
   output logic        p_ready
 );
+endmodule
 ```
 
 
