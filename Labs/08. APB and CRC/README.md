@@ -525,7 +525,7 @@ endmodule
 Для проверки блока необходимо подключить его в testbench (аналогичным образом, как и модуль-вычислитель в оболочку). Фрагмент кода приведен ниже.
 
 ```verilog
-logic        p_clk_;
+logic        p_clk_i;
 logic        p_rst_i;
 logic [31:0] p_dat_i;
 logic [31:0] p_dat_o;
