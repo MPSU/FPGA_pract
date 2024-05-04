@@ -251,7 +251,7 @@ module crc8
   localparam BUSY = 2'b01;
   localparam READ = 2'b10;
 
-  logic [2:0] state_ff;         // Регистр состояний
+  logic [1:0] state_ff;         // Регистр состояний
   logic [7:0] data_current_ff;  // Текущие данные (сдвиговый регистр)
   logic [3:0] crc_counter_ff;   // Регистр счетчик обработанных бит входного байта данных для состояния вычисления
   logic [7:0] crc_ff;           // Выходные данные CRC
