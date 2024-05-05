@@ -491,7 +491,7 @@ module wrapper_crc8
   // Generating acknowledge signal
   logic p_ready_ff;
 
-  always @ (posedge p_clk_i)
+  always_ff @ (posedge p_clk_i)
   begin
     p_ready_ff <= (cs_ack1_ff & (~cs_ack2_ff));
   end
