@@ -272,6 +272,7 @@ module crc8
             if (data_valid_i) // Если пришли новые данные - переходим
                                     // в состояние вычисления
             begin
+              crc_ff          <= 8'b0;
               state_ff        <= BUSY;
               data_current_ff <= din_i;
             end
@@ -297,7 +298,6 @@ module crc8
           end
         READ:
           begin
-            crc_ff   <= 8'b0;
             state_ff <= IDLE;
           end
       endcase
@@ -329,6 +329,7 @@ module wrapper_crc8
   output logic        p_ready
 );
 ```
+
 
 
 Для подключения модуля-вычислителя CRC необходимо объявить logic, которые будут подключаться к выводам модуля. Фрагмент кода приведен в листинге ниже.
@@ -666,7 +667,7 @@ end
 
 
 На временной диаграмме, изображенной на рисунке ниже, видно 2 цикла записи (данные 32’hAA и 32’h33), и один цикл чтения результата вычисления CRC.
-
+![image](https://github.com/iweyka/FPGA_pract/assets/56317403/7184a7dd-42f9-4eed-a797-ab6fb47ce20e)
 ![Результат моделирования.](./pic/pic18.png)
 
 ## Задание к лабораторной работе
