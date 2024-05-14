@@ -30,8 +30,7 @@ module wrapper_crc8
     .din_i        (din_i),
     .data_valid_i (data_valid_i),
     .crc_rd       (crc_rd),
-    .crc_o        (crc_o),
-    .state        (state)
+    .crc_o        (crc_o)
   );
 
   logic cs_1_ff;
