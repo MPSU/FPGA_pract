@@ -319,7 +319,7 @@ endmodule
 module wrapper_crc8
 (
   input  logic        p_clk_i,
-  input  logic        p_rst_i,
+  input  logic        p_rstn_i,
   input  logic [31:0] p_dat_i,
   output logic [31:0] p_dat_o,
   input  logic        p_sel_i,
@@ -343,7 +343,7 @@ crc8
 i_crc8
 (
   .clk_i        (p_clk_i),  // При подключении модуля указываем имя и название модуля name module_name (...
-  .rst_i        (!p_rst_i), // Подключаем к каждому сигналу модуля провод .signal_name(wire_name), ...
+  .rst_i        (!p_rstn_i), // Подключаем к каждому сигналу модуля провод .signal_name(wire_name), ...
   .din_i        (din_i),
   .data_valid_i (data_valid_i),
   .crc_rd       (crc_rd),
@@ -436,7 +436,7 @@ end
 module wrapper_crc8
 (
   input  logic        p_clk_i,
-  input  logic        p_rst_i,
+  input  logic        p_rstn_i,
   input  logic [31:0] p_dat_i,
   output logic [31:0] p_dat_o,
   input  logic        p_sel_i,
@@ -459,7 +459,7 @@ module wrapper_crc8
   i_crc8
   (
     .clk_i        (p_clk_i),
-    .rst_i        (!p_rst_i),
+    .rst_i        (!p_rstn_i),
     .din_i        (din_i),
     .data_valid_i (data_valid_i),
     .crc_rd       (crc_rd),
@@ -525,7 +525,7 @@ endmodule
 
 ```verilog
 logic        p_clk_i;
-logic        p_rst_i;
+logic        p_rstn_i;
 logic [31:0] p_dat_i;
 logic [31:0] p_dat_o;
 logic        p_enable_i;
@@ -538,7 +538,7 @@ wrapper_crc8
 dut_wrapper_crc8
 (
   .p_clk_i    (p_clk_i),
-  .p_rst_i    (p_rst_i),
+  .p_rstn_i    (),
   .p_dat_i    (p_dat_i),
   .p_dat_o    (p_dat_o),
   .p_enable_i (p_enable_i),
@@ -565,9 +565,9 @@ begin
   p_sel_i    = 0;
   p_we_i     = 'hz;
   p_adr_i    = 'hz;
-  p_rst_i    = 1;
+  p_rstn_i    = 0;
   #200
-  p_rst_i    = 0; // Запись #200 обозначает что смена значения сигнала сброса произойдет через 200нс.
+  p_rstn_i    = 1; // Запись #200 обозначает что смена значения сигнала сброса произойдет через 200нс.
 end
 ```
 
