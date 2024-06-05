@@ -538,7 +538,7 @@ wrapper_crc8
 dut_wrapper_crc8
 (
   .p_clk_i    (p_clk_i),
-  .p_rstn_i    (),
+  .p_rstn_i   (p_rstn_i),
   .p_dat_i    (p_dat_i),
   .p_dat_o    (p_dat_o),
   .p_enable_i (p_enable_i),
