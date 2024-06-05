@@ -3,7 +3,7 @@
 module wrapper_crc8
 (
   input  logic        p_clk_i,
-  input  logic        p_rst_i,
+  input  logic        p_rstn_i,
   input  logic [31:0] p_dat_i,
   output logic [31:0] p_dat_o,
   input  logic        p_sel_i,
@@ -26,7 +26,7 @@ module wrapper_crc8
   i_crc8
   (
     .clk_i        (p_clk_i),
-    .rst_i        (!p_rst_i),
+    .rst_i        (!p_rstn_i),
     .din_i        (din_i),
     .data_valid_i (data_valid_i),
     .crc_rd       (crc_rd),
