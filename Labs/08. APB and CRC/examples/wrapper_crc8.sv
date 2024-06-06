@@ -26,7 +26,7 @@ module wrapper_crc8
   i_crc8
   (
     .clk_i        (p_clk_i),
-    .rst_i        (!p_rstn_i),
+    .rstn_i       (p_rstn_i),
     .din_i        (din_i),
     .data_valid_i (data_valid_i),
     .crc_rd       (crc_rd),
