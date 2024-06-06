@@ -1,7 +1,7 @@
 module wrapper_crc8
 (
   input  logic        p_clk_i,
-  input  logic        p_rst_i,
+  input  logic        p_rstn_i,
   input  logic [31:0] p_dat_i,
   output logic [31:0] p_dat_o,
   input  logic        p_sel_i,
