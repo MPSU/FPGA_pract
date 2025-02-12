@@ -20,6 +20,10 @@
 * Добавьте в проект файл тестбенча [tb_demo.v](./demoproject/tb/tb_demo.sv)
 * Добавьте в проект xdc-файл [Nexys-A7-100T-Master.xdc](./demoproject/xdc/Nexys-A7-100T-Master.xdc)
 
+> Не забудьте снять галочку «Copy sources into project»
+
+![alt text](pic/tcl_add.png)
+
 Если вы не помните как создавать проекты, то обратитесь к
 [материалам АПС с прошлого семестра](https://github.com/MPSU/APS/tree/master/Vivado%20Basics).
 
