@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 460 216" style="enable-background:new 0 0 460 216;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{opacity:0.33;fill:#FF697E;enable-background:new    ;}
+	.st2{display:inline;fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st3{display:inline;}
+	.st4{display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2,8;}
+	.st5{fill:none;stroke:#000000;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
+	.st7{font-family:'ArialMT';}
+	.st8{font-size:12px;}
+	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:6,4;}
+	.st12{display:none;enable-background:new    ;}
+</style>
+<g id="Layer_1" class="st0">
+	<g id="Layer_3_1_">
+		<rect x="35" y="338.3" class="st1" width="262" height="58.9"/>
+		<text transform="matrix(1 0 0 1 49.3301 298.0004)" class="st3 st7 st8">clkA</text>
+		<text transform="matrix(1 0 0 1 49.3301 379.0004)" class="st3 st7 st8">clkB</text>
+		<text transform="matrix(1 0 0 1 44.6484 325.0007)" class="st3 st7 st8">flagA</text>
+		<path class="st2" d="M297,415"/>
+		<text transform="matrix(1 0 0 1 44.6484 406.0001)" class="st3 st7 st8">flagB</text>
+		<polyline class="st2" points="81,298 90,298 90,280 108,280 108,298 126,298 126,280 144,280 144,298 162,298 162,280 180,280 
+			180,298 198,298 198,280 216,280 216,298 234,298 234,280 252,280 252,298 270,298 270,280 288,280 288,298 306,298 306,280 
+			324,280 324,298 342,298 342,280 360,280 360,298 378,298 		"/>
+		<polyline class="st2" points="81,325 90,325 99,307 126,307 135,325 378,325 		"/>
+		<text transform="matrix(1 0 0 1 47.3145 352.0007)" class="st3 st7 st8">datA</text>
+		<polyline class="st2" points="81,352 126,352 135,334 378,334 		"/>
+		<polyline class="st2" points="81,379 90,379 90,361 126,361 126,379 162,379 162,361 198,361 198,379 234,379 234,361 270,361 
+			270,379 306,379 306,361 342,361 342,379 378,379 		"/>
+		<path class="st2" d="M99,361"/>
+		<polyline class="st2" points="81,406 234,406 243,388 306,388 315,406 378,406 		"/>
+		<path class="st2" d="M405,226"/>
+		<g id="Layer_3_2_" class="st3">
+			<rect x="81" y="356.7" class="st1" width="297" height="53.6"/>
+		</g>
+	</g>
+	<g>
+		<line class="st4" x1="162" y1="304.1" x2="162" y2="415"/>
+		<line class="st4" x1="90" y1="304.1" x2="90" y2="415"/>
+		<line class="st4" x1="306" y1="304.1" x2="306" y2="415"/>
+		<line class="st4" x1="234" y1="304.1" x2="234" y2="415"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<g>
+		<path class="st5" d="M55.7,155.4h-9c5,0,9,8.1,9,18c0,9.9-4,18-9,18h9c13.1,0,24-7.7,26.5-18C79.7,163.1,68.8,155.4,55.7,155.4z"
+			/>
+		<path class="st5" d="M46.7,189.4c3.3,0,7-6.6,7-16c0-9.4-3.7-16-7-16"/>
+	</g>
+	<g>
+		<g>
+			<rect x="92.2" y="140.9" class="st6" width="31" height="47"/>
+			<path d="M122.7,141.4v46h-30v-46H122.7 M123.7,140.4h-32v48h32V140.4L123.7,140.4z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="100.6,141 114.8,141 107.7,153.3 			"/>
+			<path d="M114,141.5l-6.3,10.8l-6.3-10.9L114,141.5 M115.7,140.5h-16l8,13.9L115.7,140.5L115.7,140.5z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 93.95 176.4)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 112.95 176.4)" class="st7 st8">Q</text>
+	</g>
+	<path class="st9" d="M107.1,121.4"/>
+	<path class="st9" d="M60.1,121.4"/>
+	<path class="st9" d="M108.1,117.4"/>
+	<path class="st9" d="M61.1,117.4"/>
+	<path class="st9" d="M108.1,117.4"/>
+	<path class="st9" d="M61.1,117.4"/>
+	<path class="st9" d="M107.1,125.4"/>
+	<text transform="matrix(1 0 0 1 53.4502 125.15)" class="st7 st8">clkA</text>
+	<text transform="matrix(1 0 0 1 321.1995 125.1503)" class="st7 st8">clkB</text>
+	<text transform="matrix(1 0 0 1 6.2002 159.8999)" class="st7 st8">flag</text>
+	<path d="M82.2,173.4"/>
+	<path d="M82.7,173.4"/>
+	<line class="st9" x1="82.7" y1="173.4" x2="91.7" y2="173.4"/>
+	<polyline class="st10" points="123.2,173.4 141.2,173.4 141.2,200.4 37.7,200.4 37.7,182.4 52.4,182.4 	"/>
+	<line class="st10" x1="8" y1="164.4" x2="52.4" y2="164.4"/>
+	<polyline class="st9" points="107.5,140.9 107.5,127.4 55.7,127.4 	"/>
+	<polyline class="st9" points="305.5,140.9 305.5,127.4 343.7,127.4 	"/>
+	<polyline class="st9" points="251.5,140.9 251.5,127.4 305.5,127.4 	"/>
+	<polyline class="st9" points="197.5,140.9 197.5,127.4 251.5,127.4 	"/>
+	<line class="st9" x1="141.2" y1="173.4" x2="181.7" y2="173.4"/>
+	<line class="st9" x1="213.2" y1="173.4" x2="235.7" y2="173.4"/>
+	<line class="st9" x1="267.2" y1="173.4" x2="289.7" y2="173.4"/>
+	<line class="st5" x1="321.2" y1="173.4" x2="338.2" y2="173.4"/>
+	<polyline class="st5" points="338.2,191.4 278.5,191.4 278.5,173.4 	"/>
+	<line class="st11" x1="159.2" y1="6.2" x2="159.2" y2="204.9"/>
+	<text transform="matrix(1 0 0 1 53.9502 24.25)" class="st7 st8">clkA</text>
+	<polyline class="st9" points="108,40 108,26.5 56.2,26.5 	"/>
+	<polyline class="st9" points="40,164 40,96 92,96 	"/>
+	<line class="st9" x1="92" y1="72" x2="8" y2="72"/>
+	<text transform="matrix(1 0 0 1 8 68)" class="st7 st8">dataI</text>
+	<text transform="matrix(1 0 0 1 345.9502 24.25)" class="st7 st8">clkB</text>
+	<polyline class="st9" points="400,40 400,26.5 348.2,26.5 	"/>
+	<line class="st9" x1="124" y1="72" x2="384" y2="72"/>
+	<polyline class="st5" points="368,182.4 376,182.4 376,96 384,96 	"/>
+	<line class="st9" x1="416" y1="72" x2="444" y2="72"/>
+	<g>
+		<g>
+			<rect x="392.5" y="48.7" class="st6" width="31" height="62.7"/>
+			<path d="M423,49.3v61.3h-30V49.3H423 M424,48h-32v64h32V48L424,48z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="400.9,48.6 415.1,48.6 408,60.9 			"/>
+			<path d="M414.3,49.1L408,59.9L401.7,49L414.3,49.1 M416,48.1h-16l8,13.9L416,48.1L416,48.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 394 104)" class="st12 st7 st8">en</text>
+		<text transform="matrix(1 0 0 1 413.25 84)" class="st12 st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 394.25 84)" class="st12 st7 st8">D</text>
+	</g>
+	<g>
+		<g>
+			<rect x="388.5" y="44.7" class="st6" width="31" height="62.7"/>
+			<path d="M419,45.3v61.3h-30V45.3H419 M420,44h-32v64h32V44L420,44z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="396.9,44.6 411.1,44.6 404,56.9 			"/>
+			<path d="M410.3,45.1L404,55.9L397.7,45L410.3,45.1 M412,44.1h-16l8,13.9L412,44.1L412,44.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 390 100)" class="st12 st7 st8">en</text>
+		<text transform="matrix(1 0 0 1 409.25 80)" class="st12 st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 390.25 80)" class="st12 st7 st8">D</text>
+	</g>
+	<g>
+		<g>
+			<rect x="384.5" y="40.7" class="st6" width="31" height="62.7"/>
+			<path d="M415,41.3v61.3h-30V41.3H415 M416,40h-32v64h32V40L416,40z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="392.9,40.6 407.1,40.6 400,52.9 			"/>
+			<path d="M406.3,41.1L400,51.9L393.7,41L406.3,41.1 M408,40.1h-16l8,13.9L408,40.1L408,40.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 386.25 76)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 405.25 76)" class="st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 386 96)" class="st7 st8">en</text>
+	</g>
+	<text transform="matrix(1 0 0 1 424 68)" class="st7 st8">dataO</text>
+	<g>
+		<g>
+			<rect x="182.2" y="140.7" class="st6" width="31" height="47"/>
+			<path d="M212.7,141.2v46h-30v-46L212.7,141.2 M213.7,140.2h-32v48h32V140.2L213.7,140.2z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="190.6,140.7 204.8,140.7 197.7,153.1 			"/>
+			<path d="M204,141.2l-6.3,10.9l-6.3-10.9L204,141.2 M205.7,140.2h-16l8,13.9L205.7,140.2L205.7,140.2z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 183.95 176.15)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 202.95 176.15)" class="st7 st8">Q</text>
+	</g>
+	<g>
+		<g>
+			<rect x="235.7" y="140.7" class="st6" width="31" height="47"/>
+			<path d="M266.2,141.2v46h-30v-46L266.2,141.2 M267.2,140.2h-32v48h32V140.2L267.2,140.2z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="244.1,140.7 258.3,140.7 251.2,153.1 			"/>
+			<path d="M257.5,141.2l-6.3,10.8l-6.3-10.9L257.5,141.2 M259.2,140.2h-16l8,13.9L259.2,140.2L259.2,140.2z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 237.45 176.15)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 256.45 176.15)" class="st7 st8">Q</text>
+	</g>
+	<g>
+		<g>
+			<rect x="290.2" y="140.7" class="st6" width="31" height="47"/>
+			<path d="M320.7,141.2v46h-30v-46L320.7,141.2 M321.7,140.2h-32v48h32V140.2L321.7,140.2z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="298.6,140.7 312.8,140.7 305.7,153.1 			"/>
+			<path d="M312,141.2l-6.3,10.9l-6.3-10.9L312,141.2 M313.7,140.2h-16l8,13.9L313.7,140.2L313.7,140.2z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 291.95 176.15)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 310.95 176.15)" class="st7 st8">Q</text>
+	</g>
+	<g>
+		<g>
+			<rect x="100.5" y="48.7" class="st6" width="31" height="62.7"/>
+			<path d="M131,49.3v61.3h-30V49.3H131 M132,48h-32v64h32V48L132,48z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="108.9,48.6 123.1,48.6 116,60.9 			"/>
+			<path d="M122.3,49.1L116,59.9L109.7,49L122.3,49.1 M124,48.1h-16l8,13.9L124,48.1L124,48.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 102 104)" class="st12 st7 st8">en</text>
+		<text transform="matrix(1 0 0 1 121.25 84)" class="st12 st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 102.25 84)" class="st12 st7 st8">D</text>
+	</g>
+	<g>
+		<g>
+			<rect x="96.5" y="44.7" class="st6" width="31" height="62.7"/>
+			<path d="M127,45.3v61.3H97V45.3H127 M128,44H96v64h32V44L128,44z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="104.9,44.6 119.1,44.6 112,56.9 			"/>
+			<path d="M118.3,45.1L112,55.9L105.7,45L118.3,45.1 M120,44.1h-16l8,13.9L120,44.1L120,44.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 98 100)" class="st12 st7 st8">en</text>
+		<text transform="matrix(1 0 0 1 117.25 80)" class="st12 st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 98.25 80)" class="st12 st7 st8">D</text>
+	</g>
+	<g>
+		<path class="st5" d="M341.5,164.4h-9c5,0,9,8.1,9,18c0,9.9-4,18-9,18h9c13.1,0,24-7.7,26.5-18
+			C365.4,172.1,354.5,164.4,341.5,164.4z"/>
+		<path class="st5" d="M332.5,198.4c3.3,0,7-6.6,7-16c0-9.4-3.7-16-7-16"/>
+	</g>
+	<g>
+		<g>
+			<rect x="92.5" y="40.7" class="st6" width="31" height="62.7"/>
+			<path d="M123,41.3v61.3H93V41.3H123 M124,40H92v64h32V40L124,40z"/>
+		</g>
+		<g>
+			<polygon class="st6" points="100.9,40.6 115.1,40.6 108,52.9 			"/>
+			<path d="M114.3,41.1L108,51.9L101.7,41L114.3,41.1 M116,40.1h-16l8,13.9L116,40.1L116,40.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 94.25 76)" class="st7 st8">D</text>
+		<text transform="matrix(1 0 0 1 113.25 76)" class="st7 st8">Q</text>
+		<text transform="matrix(1 0 0 1 94 96)" class="st7 st8">en</text>
+	</g>
+	<g id="Layer_3">
+		<rect x="159.6" y="6.2" class="st1" width="300.4" height="198.9"/>
+	</g>
+</g>
+</svg>

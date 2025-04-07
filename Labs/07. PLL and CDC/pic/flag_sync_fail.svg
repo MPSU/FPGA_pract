@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 306 243" style="enable-background:new 0 0 306 243;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:12px;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:6;}
+	.st5{opacity:0.33;fill:#FF697E;enable-background:new    ;}
+	.st6{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:4,6;}
+</style>
+<g>
+	<g>
+		<g>
+			<rect x="58.5" y="38.1" class="st0" width="31" height="47"/>
+			<path d="M89,38.6v46H59v-46H89 M90,37.6H58v48h32V37.6L90,37.6z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="66.9,38.2 81.1,38.2 74,50.5 			"/>
+			<path d="M80.3,38.7L74,49.5l-6.3-10.9L80.3,38.7 M82,37.7H66l8,13.9L82,37.7L82,37.7z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 60.25 73.6)" class="st1 st2">D</text>
+		<text transform="matrix(1 0 0 1 79.25 73.6)" class="st1 st2">Q</text>
+	</g>
+	<g>
+		<g>
+			<rect x="154.5" y="38.1" class="st0" width="31" height="47"/>
+			<path d="M185,38.6v46h-30v-46H185 M186,37.6h-32v48h32V37.6L186,37.6z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="162.9,38.2 177.1,38.2 170,50.5 			"/>
+			<path d="M176.3,38.7L170,49.5l-6.3-10.9L176.3,38.7 M178,37.7h-16l8,13.9L178,37.7L178,37.7z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 156.25 73.6)" class="st1 st2">D</text>
+		<text transform="matrix(1 0 0 1 175.25 73.6)" class="st1 st2">Q</text>
+	</g>
+	<line class="st3" x1="90" y1="70.1" x2="154" y2="70.1"/>
+	<line class="st3" x1="58.5" y1="70.1" x2="21.6" y2="70.1"/>
+	<line class="st3" x1="186" y1="70.2" x2="225.1" y2="70.2"/>
+	<path class="st3" d="M73.5,23.1"/>
+	<path class="st3" d="M26.5,23.1"/>
+	<path class="st3" d="M74.5,19.1"/>
+	<path class="st3" d="M27.5,19.1"/>
+	<path class="st3" d="M74.5,19.1"/>
+	<path class="st3" d="M27.5,19.1"/>
+	<polyline class="st3" points="241.1,23.1 170.5,23.1 170.5,38.1 	"/>
+	<polyline class="st3" points="73.5,38.1 73.5,23.1 26,23.1 	"/>
+	<path class="st3" d="M73.5,27.1"/>
+	<line class="st4" x1="126.3" y1="12.6" x2="126" y2="92.9"/>
+	<text transform="matrix(1 0 0 1 27.375 20.725)" class="st1 st2">clkA</text>
+	<text transform="matrix(1 0 0 1 264.955 20.725)" class="st1 st2">clkB</text>
+	<text transform="matrix(1 0 0 1 7.8 64.92)" class="st1 st2">flagA</text>
+	<g>
+		<g>
+			<rect x="225.6" y="38.1" class="st0" width="31" height="47"/>
+			<path d="M256.1,38.6v46h-30v-46H256.1 M257.1,37.6h-32v48h32V37.6L257.1,37.6z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="234,38.2 248.2,38.2 241.1,50.5 			"/>
+			<path d="M247.4,38.7l-6.3,10.8l-6.3-10.9L247.4,38.7 M249.1,37.7h-16l8,13.9L249.1,37.7L249.1,37.7z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 227.31 73.6)" class="st1 st2">D</text>
+		<text transform="matrix(1 0 0 1 246.31 73.6)" class="st1 st2">Q</text>
+	</g>
+	<line class="st3" x1="256.6" y1="70.2" x2="295.6" y2="70.2"/>
+	<text transform="matrix(1 0 0 1 267.4799 64.9198)" class="st1 st2">flagB</text>
+	<g id="Layer_3">
+		<rect x="126" y="3.6" class="st5" width="169.6" height="90"/>
+	</g>
+	<polyline class="st3" points="288.1,23.1 241.1,23.1 241.1,38.1 	"/>
+</g>
+<g>
+	<polyline class="st3" points="46,143.8 64,143.8 64,125.8 82,125.8 82,143.8 100,143.8 100,125.8 118,125.8 118,143.8 136,143.8 
+		136,125.8 154,125.8 154,143.8 172,143.8 172,125.8 190,125.8 190,143.8 208,143.8 208,125.8 226,125.8 226,143.8 244,143.8 
+		244,125.8 262,125.8 262,143.8 271,143.8 	"/>
+	<polyline class="st3" points="45,198 63,198 63,180 90,180 90,198 117,198 117,180 144,180 144,198 171,198 171,180 198,180 
+		198,198 225,198 225,180 252,180 252,198 270,198 	"/>
+	<polyline class="st3" points="46,170.8 64,170.8 73,152.8 100,152.8 109,170.8 271,170.8 	"/>
+	<rect x="9" y="176.6" class="st5" width="262" height="52.8"/>
+	<text transform="matrix(1 0 0 1 13.3301 143.9998)" class="st1 st2">clkA</text>
+	<text transform="matrix(1 0 0 1 13.3301 198.0004)" class="st1 st2">clkB</text>
+	<text transform="matrix(1 0 0 1 8.6485 170.9998)" class="st1 st2">flagA</text>
+	<path class="st3" d="M271,251.8"/>
+	<text transform="matrix(1 0 0 1 8.6485 225.0002)" class="st1 st2">flagB</text>
+	<line class="st3" x1="45" y1="225" x2="270" y2="225"/>
+</g>
+<g id="Layer_6">
+	<line class="st6" x1="63" y1="150" x2="63" y2="231.4"/>
+	<line class="st6" x1="171" y1="150" x2="171" y2="231.4"/>
+	<line class="st6" x1="117" y1="150" x2="117" y2="231.4"/>
+	<line class="st6" x1="225" y1="150" x2="225" y2="231.4"/>
+</g>
+</svg>

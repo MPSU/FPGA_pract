@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 386.2 261.2" style="enable-background:new 0 0 386.2 261.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:12px;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:6;}
+	.st5{opacity:0.33;fill:#FF697E;}
+	.st6{fill:none;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:4;}
+	.st8{font-family:'MyriadPro-Regular';}
+	.st9{font-size:10px;}
+	.st10{fill:none;stroke:#000000;stroke-linejoin:round;}
+	.st11{fill:none;stroke:#FF697E;stroke-miterlimit:10;stroke-dasharray:1.9795,0.9897;}
+</style>
+<g id="Layer_1">
+	<g>
+		<g>
+			<rect x="121.5" y="56.5" class="st0" width="31" height="47"/>
+			<path d="M152,57v46h-30V57H152 M153,56h-32v48h32V56L153,56z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="129.9,56.6 144.1,56.6 137,68.9 			"/>
+			<path d="M143.3,57.1L137,67.9L130.7,57L143.3,57.1 M145,56.1h-16l8,13.9L145,56.1L145,56.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 123.25 92)" class="st1 st2">D</text>
+		<text transform="matrix(1 0 0 1 142.25 92)" class="st1 st2">Q</text>
+	</g>
+	<g>
+		<g>
+			<rect x="217.5" y="56.5" class="st0" width="31" height="47"/>
+			<path d="M248,57v46h-30V57H248 M249,56h-32v48h32V56L249,56z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="225.9,56.6 240.1,56.6 233,68.9 			"/>
+			<path d="M239.3,57.1L233,67.9L226.7,57L239.3,57.1 M241,56.1h-16l8,13.9L241,56.1L241,56.1z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 219.25 92)" class="st1 st2">D</text>
+		<text transform="matrix(1 0 0 1 238.25 92)" class="st1 st2">Q</text>
+	</g>
+	<line class="st3" x1="153" y1="88.5" x2="217" y2="88.5"/>
+	<line class="st3" x1="122" y1="88.5" x2="90" y2="88.5"/>
+	<line class="st3" x1="249" y1="88.5" x2="281" y2="88.5"/>
+	<path class="st3" d="M136.5,41.5"/>
+	<path class="st3" d="M89.5,41.5"/>
+	<path class="st3" d="M137.5,37.5"/>
+	<path class="st3" d="M90.5,37.5"/>
+	<path class="st3" d="M137.5,37.5"/>
+	<path class="st3" d="M90.5,37.5"/>
+	<polyline class="st3" points="280.5,41.5 233.5,41.5 233.5,56.5 	"/>
+	<polyline class="st3" points="136.5,56.5 136.5,41.5 89,41.5 	"/>
+	<path class="st3" d="M136.5,45.5"/>
+	<line class="st4" x1="189.3" y1="31" x2="189" y2="111.3"/>
+	<text transform="matrix(1 0 0 1 90.375 39.125)" class="st1 st2">clkA</text>
+	<text transform="matrix(1 0 0 1 259.375 39.125)" class="st1 st2">clkB</text>
+	<text transform="matrix(1 0 0 1 89.875 85.125)" class="st1 st2">dat</text>
+	<text transform="matrix(1 0 0 1 156.875 85.125)" class="st1 st2">datA</text>
+	<text transform="matrix(1 0 0 1 252.875 85.125)" class="st1 st2">datB</text>
+	<g id="Layer_3">
+		<rect x="189" y="22" class="st5" width="99" height="90"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<polyline class="st3" points="126,157 144,157 144,139 162,139 162,157 180,157 180,139 198,139 198,157 216,157 216,139 234,139 
+		234,157 252,157 252,139 270,139 270,157 288,157 	"/>
+	<polyline class="st3" points="126,211 135,211 135,193 162,193 162,211 189,211 189,193 216,193 216,211 243,211 243,193 270,193 
+		270,211 288,211 	"/>
+	<path class="st3" d="M126,238h63c0,0,3.2-0.1,9-9s17.6,8,22.6,0s22.4-9,22.4-9l9,18h36"/>
+	<polyline class="st3" points="126,184 144,184 153,166 180,166 189,184 288,184 	"/>
+	<rect x="99" y="189.4" class="st5" width="189" height="52.6"/>
+	<text transform="matrix(1 0 0 1 99 157)" class="st1 st2">clkA</text>
+	<text transform="matrix(1 0 0 1 99 211)" class="st1 st2">clkB</text>
+	<rect x="115.6" y="181.5" class="st6" width="1.4" height="2.5"/>
+	<text transform="matrix(1 0 0 1 99 184)" class="st1 st2">datA</text>
+	<text transform="matrix(1 0 0 1 99 238)" class="st1 st2">datB</text>
+</g>
+<g id="Layer_6">
+	<line class="st7" x1="135" y1="161" x2="135" y2="247"/>
+	<line class="st7" x1="243" y1="161" x2="243" y2="247"/>
+	<line class="st7" x1="189" y1="161" x2="189" y2="247"/>
+</g>
+<g id="Layer_4">
+	<g>
+		<g>
+			<path d="M82.5,103c4.1,0,7.5,3.4,7.5,7.5v21c0,4.1-3.4,7.5-7.5,7.5h-66c-4.1,0-7.5-3.4-7.5-7.5v-21c0-4.1,3.4-7.5,7.5-7.5H82.5
+				 M82.5,102h-66c-4.7,0-8.5,3.8-8.5,8.5v21c0,4.7,3.8,8.5,8.5,8.5h66c4.7,0,8.5-3.8,8.5-8.5v-21C91,105.8,87.2,102,82.5,102
+				L82.5,102z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 17.4106 112)"><tspan x="0" y="0" class="st8 st9">Частоты clkA и </tspan><tspan x="1.7" y="11" class="st8 st9">clkB являются </tspan><tspan x="-0.2" y="22" class="st8 st9">асинхронными</tspan></text>
+	</g>
+	<g>
+		<g>
+			<path class="st10" d="M44.6,139.8c0.4,59.1,0.4,70.2,39,71.1"/>
+			<g>
+				<polygon points="82.2,215.4 90,211 82.3,206.4 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st10" d="M83.5,156.9C45,156.1,45,147.5,45,139"/>
+			<g>
+				<polygon points="82.4,152.3 90,157 82.1,161.3 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st3" d="M199.8,176.5c1.7-0.9,3.9-1.3,9.4-1.5c10.7-0.4,27.4,0,52.7,0.4s37.3-11.1,37.3-11.1"/>
+			<g>
+				<polygon points="203.5,179.7 194.6,180.3 198.5,172.2 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_7">
+	<g>
+		<g>
+			<path d="M354.1,143.5c4.1,0,7.5,3.4,7.5,7.5v7.5c0,4.1-3.4,7.5-7.5,7.5h-49.6c-4.1,0-7.5-3.4-7.5-7.5V151c0-4.1,3.4-7.5,7.5-7.5
+				H354.1 M354.1,142.5h-49.6c-4.7,0-8.5,3.8-8.5,8.5v7.5c0,4.7,3.8,8.5,8.5,8.5h49.6c4.7,0,8.5-3.8,8.5-8.5V151
+				C362.6,146.3,358.8,142.5,354.1,142.5L354.1,142.5z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 304.6152 152.5)"><tspan x="0" y="0" class="st8 st9">Изменение</tspan><tspan x="4" y="11" class="st8 st9">значения</tspan></text>
+	</g>
+</g>
+<g id="Layer_8">
+	<path class="st3" d="M189,247c0.1,2.6,2.4,3.7,6.8,3.7c1.9,0,3.7-0.2,5.7-0.3c1.9-0.2,3.8-0.4,6-0.4c5,0,7.7,1.3,8.6,3.3h0.2
+		c0.9-2,3.5-3.3,8.5-3.3c2.1,0,4,0.2,6,0.4c1.9,0.1,3.8,0.3,5.6,0.3c4.2,0,6.7-1,6.8-3.6"/>
+	<g>
+		<g>
+			<path d="M375.6,220.4c4.1,0,7.5,3.4,7.5,7.5v7.5c0,4.1-3.4,7.5-7.5,7.5h-74.2c-4.1,0-7.5-3.4-7.5-7.5v-7.5c0-4.1,3.4-7.5,7.5-7.5
+				H375.6 M375.6,219.4h-74.2c-4.7,0-8.5,3.8-8.5,8.5v7.5c0,4.7,3.8,8.5,8.5,8.5h74.2c4.7,0,8.5-3.8,8.5-8.5v-7.5
+				C384.1,223.2,380.3,219.4,375.6,219.4L375.6,219.4z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 322.2299 229.2403)"><tspan x="0" y="0" class="st8 st9">Период</tspan><tspan x="-23.1" y="11" class="st8 st9">метастабильности</tspan></text>
+	</g>
+	<g>
+		<g>
+			<path class="st3" d="M297,242c0,0-13.6,10.1-47.6,11.2"/>
+			<g>
+				<polygon points="250.8,248.1 242.2,253.3 251,258.1 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_5">
+	<g>
+		<path class="st11" d="M188.9,162.8h-5.4c-3.2,0-5.7,2.6-5.7,5.7v13.7c0,3.2,2.6,5.7,5.7,5.7h5.4c3.2,0,5.7-2.6,5.7-5.7v-13.7
+			C194.6,165.3,192,162.8,188.9,162.8z"/>
+	</g>
+</g>
+</svg>
