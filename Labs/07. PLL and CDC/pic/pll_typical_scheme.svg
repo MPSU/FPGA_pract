@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1"
-	 id="svg1" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" sodipodi:docname="pll_typical_scheme.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 576 175"
-	 style="enable-background:new 0 0 576 175;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 576 175" style="enable-background:new 0 0 576 175;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;}
-	.st1{font-family:'ArialMT';}
-	.st2{font-size:12px;}
-	.st3{enable-background:new    ;}
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:12px;}
 </style>
-<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25" id="namedview1" inkscape:current-layer="layer1" inkscape:cx="396.88662" inkscape:cy="274.35385" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1177" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="1912" inkscape:window-y="-8" inkscape:zoom="0.83651094" pagecolor="#ffffff">
-	</sodipodi:namedview>
-<rect x="63.2" y="10.8" class="st0" width="64" height="64"/>
-<text transform="matrix(1 0 0 1 68.2018 38.1665)" class="st1 st2">Делитель</text>
-<text transform="matrix(1 0 0 1 90.5018 52.5665)" class="st1 st2">Q</text>
-<rect x="155.8" y="10.8" class="st0" width="64" height="64"/>
-<circle class="st0" cx="351.3" cy="42.8" r="32"/>
-<rect x="447.7" y="10.8" class="st0" width="64" height="64"/>
-<text transform="matrix(1 0 0 1 162.926 38.1665)" class="st1 st2">Фазовый</text>
-<text transform="matrix(1 0 0 1 162.8259 52.5665)" class="st1 st2">детектор</text>
-<text transform="matrix(1 0 0 1 339.8767 46.667)" class="st1 st2">ГУН</text>
-<text transform="matrix(1 0 0 1 452.7654 38.167)" class="st1 st2">Делитель</text>
-<text transform="matrix(1 0 0 1 475.3652 52.567)" class="st1 st2">N</text>
-<rect x="234.5" y="103.5" class="st0" width="64" height="64"/>
-<text transform="matrix(1 0 0 1 239.505 135.5)" class="st1 st2">Делитель</text>
-<text transform="matrix(1 0 0 1 262.505 149.9)" class="st1 st2">P</text>
-<line class="st0" x1="383.3" y1="42.8" x2="447.7" y2="42.8"/>
-<line class="st0" x1="512" y1="42.8" x2="544" y2="42.8"/>
-<line class="st0" x1="219.8" y1="42.8" x2="236" y2="42.8"/>
-<line class="st0" x1="300" y1="43" x2="319.5" y2="43"/>
-<line class="st0" x1="127.2" y1="25" x2="155.8" y2="25"/>
-<line class="st0" x1="234.5" y1="135.5" x2="141.5" y2="135.5"/>
-<line class="st0" x1="155.8" y1="63" x2="141.5" y2="63"/>
-<line class="st0" x1="141.5" y1="135.5" x2="141.5" y2="63"/>
-<line class="st0" x1="63.2" y1="42.8" x2="31.2" y2="42.8"/>
-<line class="st0" x1="298.5" y1="135.5" x2="416" y2="135.5"/>
-<line class="st0" x1="415.5" y1="42.8" x2="415.5" y2="135.5"/>
-<text transform="matrix(1 0 0 1 4.6774 25.0005)" class="st1 st2">Опорная</text>
-<text transform="matrix(1 0 0 1 7.5774 39.4005)" class="st1 st2">частота</text>
-<text transform="matrix(1 0 0 1 515.9089 25.0005)" class="st1 st2">Выходная</text>
-<text transform="matrix(1 0 0 1 522.3088 39.4005)" class="st1 st2">частота</text>
-<rect x="236" y="11" class="st0" width="64" height="64"/>
-<text transform="matrix(1 0 0 1 247.3752 39)" class="st3"><tspan x="0" y="0" class="st1 st2">Фильтр</tspan><tspan x="-10.4" y="14.4" class="st1 st2">интегратор</tspan></text>
+<g id="Layer_2">
+	<rect class="st0" width="576" height="175"/>
+</g>
+<g id="svg1" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" sodipodi:docname="pll_typical_scheme.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+	
+		<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25" id="namedview1" inkscape:current-layer="layer1" inkscape:cx="396.88662" inkscape:cy="274.35385" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1177" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="1912" inkscape:window-y="-8" inkscape:zoom="0.83651094" pagecolor="#ffffff">
+		</sodipodi:namedview>
+	<rect x="63.2" y="10.8" class="st1" width="64" height="64"/>
+	<text transform="matrix(1 0 0 1 68.2018 38.1665)" class="st2 st3">Делитель</text>
+	<text transform="matrix(1 0 0 1 90.5018 52.5665)" class="st2 st3">Q</text>
+	<rect x="155.8" y="10.8" class="st1" width="64" height="64"/>
+	<circle class="st1" cx="351.3" cy="42.8" r="32"/>
+	<rect x="447.7" y="10.8" class="st1" width="64" height="64"/>
+	<text transform="matrix(1 0 0 1 162.926 38.1665)" class="st2 st3">Фазовый</text>
+	<text transform="matrix(1 0 0 1 162.8259 52.5665)" class="st2 st3">детектор</text>
+	<text transform="matrix(1 0 0 1 339.8767 46.667)" class="st2 st3">ГУН</text>
+	<text transform="matrix(1 0 0 1 452.7654 38.167)" class="st2 st3">Делитель</text>
+	<text transform="matrix(1 0 0 1 475.3652 52.567)" class="st2 st3">N</text>
+	<rect x="234.5" y="103.5" class="st1" width="64" height="64"/>
+	<text transform="matrix(1 0 0 1 239.505 135.5)" class="st2 st3">Делитель</text>
+	<text transform="matrix(1 0 0 1 262.505 149.9)" class="st2 st3">P</text>
+	<line class="st1" x1="383.3" y1="42.8" x2="447.7" y2="42.8"/>
+	<line class="st1" x1="512" y1="42.8" x2="544" y2="42.8"/>
+	<line class="st1" x1="219.8" y1="42.8" x2="236" y2="42.8"/>
+	<line class="st1" x1="300" y1="43" x2="319.5" y2="43"/>
+	<line class="st1" x1="127.2" y1="25" x2="155.8" y2="25"/>
+	<line class="st1" x1="234.5" y1="135.5" x2="141.5" y2="135.5"/>
+	<line class="st1" x1="155.8" y1="63" x2="141.5" y2="63"/>
+	<line class="st1" x1="141.5" y1="135.5" x2="141.5" y2="63"/>
+	<line class="st1" x1="63.2" y1="42.8" x2="31.2" y2="42.8"/>
+	<line class="st1" x1="298.5" y1="135.5" x2="416" y2="135.5"/>
+	<line class="st1" x1="415.5" y1="42.8" x2="415.5" y2="135.5"/>
+	<text transform="matrix(1 0 0 1 4.6774 25.0005)" class="st2 st3">Опорная</text>
+	<text transform="matrix(1 0 0 1 7.5774 39.4005)" class="st2 st3">частота</text>
+	<text transform="matrix(1 0 0 1 515.9089 25.0005)" class="st2 st3">Выходная</text>
+	<text transform="matrix(1 0 0 1 522.3088 39.4005)" class="st2 st3">частота</text>
+	<rect x="236" y="11" class="st1" width="64" height="64"/>
+	<text transform="matrix(1 0 0 1 247.3752 39)" class="st2 st3">Фильтр</text>
+	<text transform="matrix(1 0 0 1 236.9752 53.4)" class="st2 st3">интегратор</text>
+</g>
 </svg>

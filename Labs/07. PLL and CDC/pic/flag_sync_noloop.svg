@@ -1,135 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 423 297" style="enable-background:new 0 0 423 297;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;opacity:0.33;fill:#FF697E;enable-background:new    ;}
-	.st1{font-family:'ArialMT';}
-	.st2{font-size:12px;}
-	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st4{opacity:0.33;fill:#FF697E;enable-background:new    ;}
-	.st5{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2,8;}
-	.st6{fill:none;stroke:#000000;stroke-linejoin:bevel;stroke-miterlimit:10;}
-	.st7{fill:#FFFFFF;}
+	.st0{fill:#FFFFFF;}
+	.st1{display:none;opacity:0.33;fill:#FF697E;enable-background:new    ;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:12px;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st5{opacity:0.33;fill:#FF697E;enable-background:new    ;}
+	.st6{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2,8;}
+	.st7{fill:none;stroke:#000000;stroke-linejoin:bevel;stroke-miterlimit:10;}
 	.st8{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:6,4;}
 	.st10{font-family:'MyriadPro-Regular';}
 </style>
-<g id="Layer_3_1_">
-	<rect x="35" y="211.3" class="st0" width="262" height="58.9"/>
-	<text transform="matrix(1 0 0 1 49.3301 171.0004)" class="st1 st2">clkA</text>
-	<text transform="matrix(1 0 0 1 49.3301 252.0004)" class="st1 st2">clkB</text>
-	<text transform="matrix(1 0 0 1 44.6485 198.0008)" class="st1 st2">flagA</text>
-	<path class="st3" d="M297,288"/>
-	<text transform="matrix(1 0 0 1 44.6485 279.0001)" class="st1 st2">flagB</text>
-	<polyline class="st3" points="81,171 90,171 90,153 108,153 108,171 126,171 126,153 144,153 144,171 162,171 162,153 180,153 
-		180,171 198,171 198,153 216,153 216,171 234,171 234,153 252,153 252,171 270,171 270,153 288,153 288,171 306,171 306,153 
-		324,153 324,171 342,171 342,153 360,153 360,171 378,171 	"/>
-	<polyline class="st3" points="81,198 90,198 99,180 126,180 135,198 378,198 	"/>
-	<text transform="matrix(1 0 0 1 47.3145 225.0008)" class="st1 st2">datA</text>
-	<polyline class="st3" points="81,225 126,225 135,207 378,207 	"/>
-	<polyline class="st3" points="81,252 90,252 90,234 126,234 126,252 162,252 162,234 198,234 198,252 234,252 234,234 270,234 
-		270,252 306,252 306,234 342,234 342,252 378,252 	"/>
-	<path class="st3" d="M99,234"/>
-	<polyline class="st3" points="81,279 234,279 243,261 306,261 315,279 378,279 	"/>
-	<path class="st3" d="M405,99"/>
-	<g id="Layer_3_2_">
-		<rect x="81" y="229.7" class="st4" width="297" height="53.6"/>
-	</g>
+<g id="Layer_2">
+	<rect class="st0" width="423" height="297"/>
 </g>
-<g>
-	<line class="st5" x1="162" y1="177.1" x2="162" y2="288"/>
-	<line class="st5" x1="90" y1="177.1" x2="90" y2="288"/>
-	<line class="st5" x1="306" y1="177.1" x2="306" y2="288"/>
-	<line class="st5" x1="234" y1="177.1" x2="234" y2="288"/>
-</g>
-<g>
-	<g>
-		<path class="st6" d="M63,54h-9c5,0,9,8.1,9,18s-4,18-9,18h9c13.1,0,24-7.7,26.5-18C87,61.7,76.1,54,63,54z"/>
-		<path class="st6" d="M54,88c3.3,0,7-6.6,7-16s-3.7-16-7-16"/>
+<g id="Layer_1">
+	<g id="Layer_3_1_">
+		<rect x="35" y="211.3" class="st1" width="262" height="58.9"/>
+		<text transform="matrix(1 0 0 1 49.3301 171.0004)" class="st2 st3">clkA</text>
+		<text transform="matrix(1 0 0 1 49.3301 252.0004)" class="st2 st3">clkB</text>
+		<text transform="matrix(1 0 0 1 44.6485 198.0008)" class="st2 st3">flagA</text>
+		<path class="st4" d="M297,288"/>
+		<text transform="matrix(1 0 0 1 44.6485 279.0001)" class="st2 st3">flagB</text>
+		<polyline class="st4" points="81,171 90,171 90,153 108,153 108,171 126,171 126,153 144,153 144,171 162,171 162,153 180,153 
+			180,171 198,171 198,153 216,153 216,171 234,171 234,153 252,153 252,171 270,171 270,153 288,153 288,171 306,171 306,153 
+			324,153 324,171 342,171 342,153 360,153 360,171 378,171 		"/>
+		<polyline class="st4" points="81,198 90,198 99,180 126,180 135,198 378,198 		"/>
+		<text transform="matrix(1 0 0 1 47.3145 225.0008)" class="st2 st3">datA</text>
+		<polyline class="st4" points="81,225 126,225 135,207 378,207 		"/>
+		<polyline class="st4" points="81,252 90,252 90,234 126,234 126,252 162,252 162,234 198,234 198,252 234,252 234,234 270,234 
+			270,252 306,252 306,234 342,234 342,252 378,252 		"/>
+		<path class="st4" d="M99,234"/>
+		<polyline class="st4" points="81,279 234,279 243,261 306,261 315,279 378,279 		"/>
+		<path class="st4" d="M405,99"/>
+		<g id="Layer_3_2_">
+			<rect x="81" y="229.7" class="st5" width="297" height="53.6"/>
+		</g>
 	</g>
 	<g>
-		<g>
-			<rect x="99.5" y="39.5" class="st7" width="31" height="47"/>
-			<path d="M130,40v46h-30V40H130 M131,39H99v48h32V39L131,39z"/>
-		</g>
-		<g>
-			<polygon class="st7" points="107.9,39.6 122.1,39.6 115,51.9 			"/>
-			<path d="M121.3,40.1L115,50.9L108.7,40L121.3,40.1 M123,39.1h-16l8,13.9L123,39.1L123,39.1z"/>
-		</g>
-		<text transform="matrix(1 0 0 1 101.25 75)" class="st1 st2">D</text>
-		<text transform="matrix(1 0 0 1 120.25 75)" class="st1 st2">Q</text>
-	</g>
-	<path class="st3" d="M114.4,20"/>
-	<path class="st3" d="M67.4,20"/>
-	<path class="st3" d="M115.4,16"/>
-	<path class="st3" d="M68.4,16"/>
-	<path class="st3" d="M115.4,16"/>
-	<path class="st3" d="M68.4,16"/>
-	<path class="st3" d="M114.4,24"/>
-	<text transform="matrix(1 0 0 1 60.7501 23.75)" class="st1 st2">clkA</text>
-	<text transform="matrix(1 0 0 1 328.4995 23.7502)" class="st1 st2">clkB</text>
-	<text transform="matrix(1 0 0 1 13.5001 58.4999)" class="st1 st2">flagA</text>
-	<path d="M89.5,72"/>
-	<path d="M90,72"/>
-	<line class="st3" x1="90" y1="72" x2="99" y2="72"/>
-	<polyline class="st8" points="130.5,72 148.5,72 148.5,99 45,99 45,81 59.7,81 	"/>
-	<line class="st8" x1="18" y1="63" x2="59.7" y2="63"/>
-	<polyline class="st3" points="114.8,39.5 114.8,26 63,26 	"/>
-	<g>
-		<g>
-			<rect x="189.5" y="39.3" class="st7" width="31" height="47"/>
-			<path d="M220,39.8v46h-30v-46L220,39.8 M221,38.8h-32v48h32V38.8L221,38.8z"/>
-		</g>
-		<g>
-			<polygon class="st7" points="197.9,39.3 212.1,39.3 205,51.7 			"/>
-			<path d="M211.3,39.8L205,50.7l-6.3-10.9L211.3,39.8 M213,38.8h-16l8,13.9L213,38.8L213,38.8z"/>
-		</g>
-		<text transform="matrix(1 0 0 1 191.25 74.75)" class="st1 st2">D</text>
-		<text transform="matrix(1 0 0 1 210.25 74.75)" class="st1 st2">Q</text>
+		<line class="st6" x1="162" y1="177.1" x2="162" y2="288"/>
+		<line class="st6" x1="90" y1="177.1" x2="90" y2="288"/>
+		<line class="st6" x1="306" y1="177.1" x2="306" y2="288"/>
+		<line class="st6" x1="234" y1="177.1" x2="234" y2="288"/>
 	</g>
 	<g>
 		<g>
-			<rect x="243" y="39.3" class="st7" width="31" height="47"/>
-			<path d="M273.5,39.8v46h-30v-46L273.5,39.8 M274.5,38.8h-32v48h32V38.8L274.5,38.8z"/>
+			<path class="st7" d="M63,54h-9c5,0,9,8.1,9,18s-4,18-9,18h9c13.1,0,24-7.7,26.5-18C87,61.7,76.1,54,63,54z"/>
+			<path class="st7" d="M54,88c3.3,0,7-6.6,7-16s-3.7-16-7-16"/>
 		</g>
 		<g>
-			<polygon class="st7" points="251.4,39.3 265.6,39.3 258.5,51.7 			"/>
-			<path d="M264.8,39.8l-6.3,10.8l-6.3-10.9L264.8,39.8 M266.5,38.8h-16l8,13.9L266.5,38.8L266.5,38.8z"/>
+			<g>
+				<rect x="99.5" y="39.5" class="st0" width="31" height="47"/>
+				<path d="M130,40v46h-30V40H130 M131,39H99v48h32V39L131,39z"/>
+			</g>
+			<g>
+				<polygon class="st0" points="107.9,39.6 122.1,39.6 115,51.9 				"/>
+				<path d="M121.3,40.1L115,50.9L108.7,40L121.3,40.1 M123,39.1h-16l8,13.9L123,39.1L123,39.1z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 101.25 75)" class="st2 st3">D</text>
+			<text transform="matrix(1 0 0 1 120.25 75)" class="st2 st3">Q</text>
 		</g>
-		<text transform="matrix(1 0 0 1 244.75 74.75)" class="st1 st2">D</text>
-		<text transform="matrix(1 0 0 1 263.75 74.75)" class="st1 st2">Q</text>
-	</g>
-	<g>
+		<path class="st4" d="M114.4,20"/>
+		<path class="st4" d="M67.4,20"/>
+		<path class="st4" d="M115.4,16"/>
+		<path class="st4" d="M68.4,16"/>
+		<path class="st4" d="M115.4,16"/>
+		<path class="st4" d="M68.4,16"/>
+		<path class="st4" d="M114.4,24"/>
+		<text transform="matrix(1 0 0 1 60.7501 23.75)" class="st2 st3">clkA</text>
+		<text transform="matrix(1 0 0 1 328.4995 23.7502)" class="st2 st3">clkB</text>
+		<text transform="matrix(1 0 0 1 13.5001 58.4999)" class="st2 st3">flagA</text>
+		<path d="M89.5,72"/>
+		<path d="M90,72"/>
+		<line class="st4" x1="90" y1="72" x2="99" y2="72"/>
+		<polyline class="st8" points="130.5,72 148.5,72 148.5,99 45,99 45,81 59.7,81 		"/>
+		<line class="st8" x1="18" y1="63" x2="59.7" y2="63"/>
+		<polyline class="st4" points="114.8,39.5 114.8,26 63,26 		"/>
 		<g>
-			<rect x="297.5" y="39.3" class="st7" width="31" height="47"/>
-			<path d="M328,39.8v46h-30v-46L328,39.8 M329,38.8h-32v48h32V38.8L329,38.8z"/>
+			<g>
+				<rect x="189.5" y="39.3" class="st0" width="31" height="47"/>
+				<path d="M220,39.8v46h-30v-46L220,39.8 M221,38.8h-32v48h32V38.8L221,38.8z"/>
+			</g>
+			<g>
+				<polygon class="st0" points="197.9,39.3 212.1,39.3 205,51.7 				"/>
+				<path d="M211.3,39.8L205,50.7l-6.3-10.9L211.3,39.8 M213,38.8h-16l8,13.9L213,38.8L213,38.8z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 191.25 74.75)" class="st2 st3">D</text>
+			<text transform="matrix(1 0 0 1 210.25 74.75)" class="st2 st3">Q</text>
 		</g>
 		<g>
-			<polygon class="st7" points="305.9,39.3 320.1,39.3 313,51.7 			"/>
-			<path d="M319.3,39.8L313,50.7l-6.3-10.9L319.3,39.8 M321,38.8h-16l8,13.9L321,38.8L321,38.8z"/>
+			<g>
+				<rect x="243" y="39.3" class="st0" width="31" height="47"/>
+				<path d="M273.5,39.8v46h-30v-46L273.5,39.8 M274.5,38.8h-32v48h32V38.8L274.5,38.8z"/>
+			</g>
+			<g>
+				<polygon class="st0" points="251.4,39.3 265.6,39.3 258.5,51.7 				"/>
+				<path d="M264.8,39.8l-6.3,10.8l-6.3-10.9L264.8,39.8 M266.5,38.8h-16l8,13.9L266.5,38.8L266.5,38.8z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 244.75 74.75)" class="st2 st3">D</text>
+			<text transform="matrix(1 0 0 1 263.75 74.75)" class="st2 st3">Q</text>
 		</g>
-		<text transform="matrix(1 0 0 1 299.25 74.75)" class="st1 st2">D</text>
-		<text transform="matrix(1 0 0 1 318.25 74.75)" class="st1 st2">Q</text>
+		<g>
+			<g>
+				<rect x="297.5" y="39.3" class="st0" width="31" height="47"/>
+				<path d="M328,39.8v46h-30v-46L328,39.8 M329,38.8h-32v48h32V38.8L329,38.8z"/>
+			</g>
+			<g>
+				<polygon class="st0" points="305.9,39.3 320.1,39.3 313,51.7 				"/>
+				<path d="M319.3,39.8L313,50.7l-6.3-10.9L319.3,39.8 M321,38.8h-16l8,13.9L321,38.8L321,38.8z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 299.25 74.75)" class="st2 st3">D</text>
+			<text transform="matrix(1 0 0 1 318.25 74.75)" class="st2 st3">Q</text>
+		</g>
+		<polyline class="st4" points="312.8,39.5 312.8,26 351,26 		"/>
+		<polyline class="st4" points="258.8,39.5 258.8,26 312.8,26 		"/>
+		<polyline class="st4" points="204.8,39.5 204.8,26 258.8,26 		"/>
+		<line class="st4" x1="148.5" y1="72" x2="189" y2="72"/>
+		<line class="st4" x1="220.5" y1="72" x2="243" y2="72"/>
+		<line class="st4" x1="274.5" y1="72" x2="297" y2="72"/>
+		<g>
+			<path class="st7" d="M348.8,63h-9c5,0,9,8.1,9,18s-4,18-9,18h9c13.1,0,24-7.7,26.5-18C372.7,70.7,361.8,63,348.8,63z"/>
+			<path class="st7" d="M339.8,97c3.3,0,7-6.6,7-16s-3.7-16-7-16"/>
+		</g>
+		<line class="st7" x1="328.5" y1="72" x2="345.5" y2="72"/>
+		<polyline class="st7" points="345.5,90 285.8,90 285.8,72 		"/>
+		<line class="st7" x1="375.2" y1="81" x2="407.3" y2="81"/>
+		<text transform="matrix(1 0 0 1 387.0003 76.5001)" class="st2 st3">flagB</text>
+		<g id="Layer_3">
+			<rect x="166.9" y="9" class="st5" width="249.4" height="94.6"/>
+		</g>
+		<line class="st9" x1="166.5" y1="9" x2="166.5" y2="103.5"/>
+		<text transform="matrix(1 0 0 1 135 67.5001)" class="st10 st3">datA</text>
 	</g>
-	<polyline class="st3" points="312.8,39.5 312.8,26 351,26 	"/>
-	<polyline class="st3" points="258.8,39.5 258.8,26 312.8,26 	"/>
-	<polyline class="st3" points="204.8,39.5 204.8,26 258.8,26 	"/>
-	<line class="st3" x1="148.5" y1="72" x2="189" y2="72"/>
-	<line class="st3" x1="220.5" y1="72" x2="243" y2="72"/>
-	<line class="st3" x1="274.5" y1="72" x2="297" y2="72"/>
-	<g>
-		<path class="st6" d="M348.8,63h-9c5,0,9,8.1,9,18s-4,18-9,18h9c13.1,0,24-7.7,26.5-18C372.7,70.7,361.8,63,348.8,63z"/>
-		<path class="st6" d="M339.8,97c3.3,0,7-6.6,7-16s-3.7-16-7-16"/>
-	</g>
-	<line class="st6" x1="328.5" y1="72" x2="345.5" y2="72"/>
-	<polyline class="st6" points="345.5,90 285.8,90 285.8,72 	"/>
-	<line class="st6" x1="375.2" y1="81" x2="407.3" y2="81"/>
-	<text transform="matrix(1 0 0 1 387.0003 76.5001)" class="st1 st2">flagB</text>
-	<g id="Layer_3">
-		<rect x="166.9" y="9" class="st4" width="249.4" height="94.6"/>
-	</g>
-	<line class="st9" x1="166.5" y1="9" x2="166.5" y2="103.5"/>
-	<text transform="matrix(1 0 0 1 135 67.5001)" class="st10 st2">datA</text>
 </g>
 </svg>
