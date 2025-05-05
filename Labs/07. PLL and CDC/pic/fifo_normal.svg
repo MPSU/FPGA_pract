@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 320 144" style="enable-background:new 0 0 320 144;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:12px;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#5B2A0D;stroke-miterlimit:10;}
+	.st6{fill:#5B2A0D;}
+	.st7{fill:none;stroke:#241F61;stroke-miterlimit:10;}
+	.st8{fill:#241F61;}
+	.st9{fill:none;stroke:#231F20;stroke-miterlimit:10;}
+	.st10{fill:#231F20;}
+	.st11{fill:none;stroke:#231F20;stroke-width:4;stroke-miterlimit:10;}
+	.st12{font-family:'ArialMT';}
+</style>
+<g id="Layer_2">
+	<rect class="st0" width="320" height="144"/>
+</g>
+<g id="Layer_1">
+	<g>
+		<rect x="128" y="3" class="st1" width="64" height="81"/>
+		<text transform="matrix(1 0 0 1 139.084 40)" class="st2 st3">Memory</text>
+		<text transform="matrix(1 0 0 1 151.484 54.4)" class="st2 st3">cell</text>
+	</g>
+	<g>
+		<rect x="48" y="56" class="st4" width="48" height="28"/>
+		<g>
+			<text transform="matrix(1 0 0 1 58.5664 68)" class="st2 st3">Write</text>
+			<text transform="matrix(1 0 0 1 52.4664 82.4)" class="st2 st3">counter</text>
+		</g>
+	</g>
+	<g>
+		<rect x="224" y="56" class="st4" width="48" height="28"/>
+		<g>
+			<text transform="matrix(1 0 0 1 235.4902 68)" class="st2 st3">Read</text>
+			<text transform="matrix(1 0 0 1 228.3902 82.4)" class="st2 st3">counter</text>
+		</g>
+	</g>
+	<g>
+		<rect x="48" y="104" class="st4" width="48" height="32"/>
+		<g>
+			<text transform="matrix(1 0 0 1 62.9399 116)" class="st2 st3">Full</text>
+			<text transform="matrix(1 0 0 1 62.6399 130.4)" class="st2 st3">flag</text>
+		</g>
+	</g>
+	<g>
+		<rect x="224" y="104" class="st4" width="48" height="32"/>
+		<g>
+			<text transform="matrix(1 0 0 1 231.8184 116)" class="st2 st3">Empty</text>
+			<text transform="matrix(1 0 0 1 238.6184 130.4)" class="st2 st3">flag</text>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st5" x1="96" y1="68" x2="120.8" y2="68"/>
+			<g>
+				<polygon class="st6" points="119.4,73 128,68 119.4,63 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="224" y1="68" x2="199.2" y2="68"/>
+			<g>
+				<polygon class="st8" points="200.6,63 192,68 200.6,73 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline class="st5" points="108,68 108,112 103.2,112 			"/>
+			<g>
+				<polygon class="st6" points="104.6,107 96,112 104.6,117 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st5" x1="216.8" y1="112" x2="108" y2="112"/>
+			<g>
+				<polygon class="st6" points="215.4,107 224,112 215.4,117 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st7" d="M208,68v40c0,0-4,0-4,4s4,4,4,4v12h8.8"/>
+			<g>
+				<polygon class="st8" points="215.4,133 224,128 215.4,123 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="103.2" y1="128" x2="212" y2="128"/>
+			<g>
+				<polygon class="st8" points="104.6,133 96,128 104.6,123 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st9" x1="0" y1="68" x2="40.8" y2="68"/>
+			<g>
+				<polygon class="st10" points="39.4,73 48,68 39.4,63 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st9" x1="48" y1="120" x2="7.2" y2="120"/>
+			<g>
+				<polygon class="st10" points="8.6,115 0,120 8.6,125 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st9" x1="272" y1="120" x2="312.8" y2="120"/>
+			<g>
+				<polygon class="st10" points="311.4,125 320,120 311.4,115 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st9" x1="279.2" y1="68" x2="320" y2="68"/>
+			<g>
+				<polygon class="st10" points="280.6,73 272,68 280.6,63 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st11" x1="192" y1="24" x2="308.5" y2="24"/>
+			<g>
+				<polygon class="st10" points="306.2,32 320,24 306.2,16 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st11" x1="0" y1="24" x2="116.5" y2="24"/>
+			<g>
+				<polygon class="st10" points="114.2,32 128,24 114.2,16 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 4 20)" class="st12 st3">Write Data</text>
+	<text transform="matrix(1 0 0 1 248 20)" class="st12 st3">Read Data</text>
+	<text transform="matrix(1 0 0 1 4 48)" class="st2 st3">Write</text>
+	<text transform="matrix(1 0 0 1 4 62.4)" class="st2 st3">Signal</text>
+	<text transform="matrix(1 0 0 1 284 48)" class="st2 st3">Read</text>
+	<text transform="matrix(1 0 0 1 284 62.4)" class="st2 st3">Signal</text>
+</g>
+</svg>
