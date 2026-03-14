@@ -277,7 +277,7 @@ module simple_fifo
   logic [PTR_WIDTH-1:0] mem_rptr;
   logic [PTR_WIDTH-1:0] mem_wptr;
 
-  always_ff (posedge clk_i or negedge rstn_i) begin
+  always_ff @(posedge clk_i or negedge rstn_i) begin
     if (~rstn_i)
       wptr_ff <= '0;
     else if (push_i)
@@ -286,12 +286,12 @@ module simple_fifo
 
   assign mem_wptr = wptr_ff[PTR_WIDTH-1:0];
 
-  always_ff (posedge clk_i) begin
+  always_ff @(posedge clk_i) begin
     if (push_i)
       fifo_mem[wptr_ff] <= wdata_i;
   end
 
-  always_ff (posedge clk_i or negedge rstn_i) begin
+  always_ff @(posedge clk_i or negedge rstn_i) begin
     if (~rstn_i)
       rptr_ff <= '0;
     else if (pop_i)
