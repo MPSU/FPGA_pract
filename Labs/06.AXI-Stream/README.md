@@ -638,20 +638,22 @@ module axis_join_static
 
   always_comb begin
     case (grant)
-    4'b0001: m_tdata = s0_tdata;
-    4'b0010: m_tdata = s1_tdata;
-    4'b0100: m_tdata = s2_tdata;
-    4'b1000: m_tdata = s3_tdata;
-    default: m_tdata = s0_tdata;
+      4'b0001: m_tdata = s0_tdata;
+      4'b0010: m_tdata = s1_tdata;
+      4'b0100: m_tdata = s2_tdata;
+      4'b1000: m_tdata = s3_tdata;
+      default: m_tdata = s0_tdata;
+    endcase
   end
 
   always_comb begin
     case (grant)
-    4'b0001: m_tuser = 2'd0;
-    4'b0010: m_tuser = 2'd1;
-    4'b0100: m_tuser = 2'd2;
-    4'b1000: m_tuser = 2'd3;
-    default: m_tuser = 2'd0;
+      4'b0001: m_tuser = 2'd0;
+      4'b0010: m_tuser = 2'd1;
+      4'b0100: m_tuser = 2'd2;
+      4'b1000: m_tuser = 2'd3;
+      default: m_tuser = 2'd0;
+    endcase
   end
 
   assign s0_tready = m_tready & grant[0];
@@ -773,20 +775,22 @@ module axis_join_rr
 
   always_comb begin
     case (grant)
-    4'b0001: m_tdata = s0_tdata;
-    4'b0010: m_tdata = s1_tdata;
-    4'b0100: m_tdata = s2_tdata;
-    4'b1000: m_tdata = s3_tdata;
-    default: m_tdata = s0_tdata;
+      4'b0001: m_tdata = s0_tdata;
+      4'b0010: m_tdata = s1_tdata;
+      4'b0100: m_tdata = s2_tdata;
+      4'b1000: m_tdata = s3_tdata;
+      default: m_tdata = s0_tdata;
+    endcase
   end
 
   always_comb begin
     case (grant)
-    4'b0001: m_tuser = 2'd0;
-    4'b0010: m_tuser = 2'd1;
-    4'b0100: m_tuser = 2'd2;
-    4'b1000: m_tuser = 2'd3;
-    default: m_tuser = 2'd0;
+      4'b0001: m_tuser = 2'd0;
+      4'b0010: m_tuser = 2'd1;
+      4'b0100: m_tuser = 2'd2;
+      4'b1000: m_tuser = 2'd3;
+      default: m_tuser = 2'd0;
+    endcase 
   end
 
   assign s0_tready = m_tready & grant[0];
@@ -796,9 +800,9 @@ module axis_join_rr
 
   always_comb begin
     case(grant)
-      4'b0001: ptr_next = 2'd1
+      4'b0001: ptr_next = 2'd1;
       4'b0010: ptr_next = 2'd2;
-      4'b0100: ptr_next = 2'd3:
+      4'b0100: ptr_next = 2'd3;
       4'b1000: ptr_next = 2'd0;
       default: ptr_next = 2'd0;
     endcase
