@@ -252,11 +252,11 @@ module ff2_synchroniser_flag_busy (
     input  logic datA_i,
     output logic datB_o
 );
-
-    //Clock domain A
-
     logic       toggleA;
     logic [1:0] syncBusyA;
+    logic [2:0] syncB;
+
+    //Clock domain A
 
     always_ff @(posedge clkA_i) toggleA <= toggleA ^ datA_i;
     always_ff @(posedge clkA_i) syncBusyA <= {syncBusyA[0], syncB[2]};
@@ -264,8 +264,6 @@ module ff2_synchroniser_flag_busy (
     assign busyA_o = syncBusyA[1] ^ toggleA;
 
     //Clock domain B
-
-    logic [2:0] syncB;
 
     always_ff @(posedge clkB_i) syncB <= {syncB[1:0], toggleA};
 
@@ -303,7 +301,7 @@ endmodule
 ```verilog
 module bin2grey (
     input  logic [3:0] bin_i,
-    output logic [3:0] grey_o,
+    output logic [3:0] grey_o
 );
 
     assign grey_o = (bin_i >> 1) ^ bin_i;
@@ -312,7 +310,7 @@ endmodule
 
 module grey2bin (
     input  logic [3:0] grey_i,
-    output logic [3:0] bin_o,
+    output logic [3:0] bin_o
 );
 
     assign bin_o[3] =  grey_i[3];
