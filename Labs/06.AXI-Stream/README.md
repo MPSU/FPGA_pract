@@ -887,19 +887,19 @@ module task1
   input  logic        rstn_i,
 
   input  logic [15:0] data_a_i,
-  input  logic [15:0] valid_a_i,
+  input  logic        valid_a_i,
   output logic        ready_a_o,
 
   input  logic [15:0] data_b_i,
-  input  logic [15:0] valid_b_i,
+  input  logic        valid_b_i,
   output logic        ready_b_o,
 
   input  logic [15:0] data_c_i,
-  input  logic [15:0] valid_c_i,
+  input  logic        valid_c_i,
   output logic        ready_c_o,
 
   output logic [31:0] data_y_o,
-  output logic [31:0] valid_y_o,
+  output logic        valid_y_o,
   input  logic        ready_y_i
 );
 ...
