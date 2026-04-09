@@ -968,9 +968,9 @@ module axis_join_param
   input  logic                   clk_i,
   input  logic                   rstn_i,
 
-  input  logic                   s_tvalid [S_NUM-1:0],
-  output logic                   s_tready [S_NUM-1:0],
-  input  logic [TDATA_WIDTH-1:0] s_tdata  [S_NUM-1:0],
+  input  logic                   s_tvalid [SLAVE_NUM-1:0],
+  output logic                   s_tready [SLAVE_NUM-1:0],
+  input  logic [TDATA_WIDTH-1:0] s_tdata  [SLAVE_NUM-1:0],
 
   output logic                   m_tvalid,
   input  logic                   m_tready,
