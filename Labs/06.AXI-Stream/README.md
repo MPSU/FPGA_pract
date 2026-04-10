@@ -344,8 +344,7 @@ module fifo_wrapper
   #(
     .D_WIDTH (8),
     .PTR_WIDTH (4)
-  )
-  (
+  ) i_simple_fifo(
     .clk_i   (clk_i),
     .rstn_i  (rstn_i),
 
