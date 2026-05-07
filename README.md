@@ -14,8 +14,7 @@
 * [Лабораторная работа 6. Шина AXI-Stream, Valid-Ready, Credit Flow control](./Labs/06.AXI-Stream/README.md)
 * [Лабораторная работа 7. PLL, пересечение доменов тактовых частот](./Labs/07.%20PLL%20and%20CDC/README.md)
 * [Лабораторная работа 8. Системная шина APB, разработка периферийного устройства](./Labs/08.%20APB%20and%20CRC/README.md)
-* [Лабораторная работа 9. GCC, Makefile](./Labs/09.%20gcc%20make/README.md)
-* Лабораторная работа 10. СнК Pulpino, интеграция периферийного устройства, разработка драйвера
+* [Лабораторная работа 9. Шина AXI-Lite](./Labs/09.%20AXI-Lite/README.md)
 
 * [Вопросы на зачёт](./Other/exam_questions.md)
 
@@ -27,8 +26,8 @@
 4. [Лабораторная работа 6. Шина AXI-Stream, Valid-Ready, Credit Flow control](./Labs/06.AXI-Stream/README.md)
 5. [Лабораторная работа 7. PLL, пересечение доменов тактовых частот](./Labs/07.%20PLL%20and%20CDC/README.md)
 6. [Лабораторная работа 8. Системная шина APB, разработка периферийного устройства](./Labs/08.%20APB%20and%20CRC/README.md)
-7. TBD
-8. TBD
+7. [Лабораторная работа 9. Шина AXI-Lite](./Labs/09.%20AXI-Lite/README.md)
+8. [Лабораторная работа 9. Шина AXI-Lite](./Labs/09.%20AXI-Lite/README.md)
 
 ## Правила сдачи лабораторных работ:
 * Лабораторные сдаются без понижения:
