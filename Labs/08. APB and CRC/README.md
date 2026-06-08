@@ -374,10 +374,19 @@ assign cs = cs_1_ff & (~cs_2_ff);
 
 ```verilog
 // Формирование выходных данных системной шины
-always_comb
-begin //Для чтения crc используем адрес 1
-  if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd4))
-    p_dat_o = {24'd0, crc_o};
+always_ff @(posedge p_clk_i)
+begin
+  if (!p_rstn_i) begin
+    p_dat_o <= '0;
+  end
+  else begin
+    if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd4)) begin
+      p_dat_o <= {24'd0, crc_o};
+    end
+    else if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd8)) begin
+      p_dat_o <= {30'd0, state};
+    end
+  end
 end
 
 // Формирование сигналов на модуль-вычислитель
@@ -497,13 +506,19 @@ module wrapper_crc8
 
   assign p_ready = p_ready_ff;
 
-  always_comb
+  always_ff @(posedge p_clk_i)
   begin
-    p_dat_o = '0;
-    if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd4))
-      p_dat_o = {24'd0, crc_o};
-    else if (cs & (~p_we_i)& (p_adr_i[3:0] == 4'd8))
-      p_dat_o = {30'd0, state};
+    if (!p_rstn_i) begin
+      p_dat_o <= '0;
+    end
+    else begin
+      if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd4)) begin
+        p_dat_o <= {24'd0, crc_o};
+      end
+      else if (cs & (~p_we_i) & (p_adr_i[3:0] == 4'd8)) begin
+        p_dat_o <= {30'd0, state};
+      end
+    end
   end
 
   assign data_valid_i = (cs & p_we_i & p_adr_i[3:0]  == 4'd0);
